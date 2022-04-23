@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springbootdemo.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.springbootdemo.model.UserInfo">
+        <result column="id" jdbcType="BIGINT" property="id"/>
+        <result column="user_name" jdbcType="VARCHAR" property="userName"/>
+        <result column="pass_word" jdbcType="VARCHAR" property="passWord"/>
+        <result column="real_name" jdbcType="VARCHAR" property="realName"/>
+        <result column="deleted" jdbcType="INTEGER" property="deleted"/>
+        <result column="create_by" jdbcType="VARCHAR" property="createBy"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_by" jdbcType="VARCHAR" property="updateBy"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+    </resultMap>
+
+    <select id="Sel" resultType="com.example.springbootdemo.model.UserInfo">
+        select * from userInfo where id = #{id}
+  </select>
+
+    <select id="selectPageVo" resultType="com.example.springbootdemo.model.UserInfo">
+    SELECT * FROM userInfo WHERE id > #{id}
+  </select>
+
+</mapper>

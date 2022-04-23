@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springbootdemo.mapper.SysDeptMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.springbootdemo.model.SysDept">
+        <result column="id" jdbcType="BIGINT" property="deptId"/>
+        <result column="parent_id" jdbcType="BIGINT" property="parentId"/>
+        <result column="dept_name" jdbcType="VARCHAR" property="deptName"/>
+        <result column="order_num" jdbcType="VARCHAR" property="orderNum"/>
+        <result column="status" jdbcType="VARCHAR" property="status"/>
+    </resultMap>
+
+</mapper>

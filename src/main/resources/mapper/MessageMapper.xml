@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springbootdemo.mapper.MessageMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.springbootdemo.model.Message">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <result column="message" property="message" jdbcType="VARCHAR"/>
+        <result column="senddate" property="senddate" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+    id, message, senddate
+    </sql>
+
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long">
+        select
+        <include refid="Base_Column_List"/>
+        from message
+        where id = #{id,jdbcType=BIGINT}
+    </select>
+
+    <select id="selectAll" resultMap="BaseResultMap">
+    select
+         id, message, senddate
+    from message
+    order by senddate asc
+    </select>
+
+    <select id="getMessById" resultMap="BaseResultMap" parameterType="java.lang.String">
+       select
+               id, message, senddate
+       from
+            message
+           where id = #{id,jdbcType=BIGINT}
+        order by senddate asc
+    </select>
+
+    <delete id="detele">
+        delete from message where id = #{id}
+    </delete>
+
+    <insert id="add" useGeneratedKeys="true" keyProperty="id" parameterType="com.example.springbootdemo.model.Message">
+        insert into message (message, senddate) VALUES ('2', '2020-10-23 00:00:00')
+    </insert>
+
+</mapper>
