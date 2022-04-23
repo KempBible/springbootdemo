@@ -352,7 +352,7 @@
       <workItem from="1650513013260" duration="12749000" />
       <workItem from="1650695170242" duration="665000" />
       <workItem from="1650695924131" duration="93000" />
-      <workItem from="1650696056487" duration="307000" />
+      <workItem from="1650696056487" duration="608000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1650695268153</created>
@@ -361,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650695268154</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test">
+      <created>1650696503251</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1650696503252</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -743,11 +750,11 @@
     </state>
     <state width="500" height="436" key="SwitcherDM/0.38.1512.879/1512.25.1920.1055@0.38.1512.879" timestamp="1650376309108" />
     <state width="500" height="445" key="SwitcherDM/0.38.1512.887/1512.25.1920.1055@1512.25.1920.1055" timestamp="1648018181882" />
-    <state x="356" y="219" key="Vcs.Push.Dialog.v2" timestamp="1650696150241">
-      <screen x="0" y="32" width="1512" height="950" />
+    <state x="356" y="210" key="Vcs.Push.Dialog.v2" timestamp="1650696712390">
+      <screen x="0" y="38" width="1512" height="876" />
     </state>
     <state x="356" y="219" key="Vcs.Push.Dialog.v2/0.32.1512.950/1512.25.1920.1055@0.32.1512.950" timestamp="1650696150241" />
-    <state x="356" y="210" key="Vcs.Push.Dialog.v2/0.38.1512.876/1512.25.1920.1055@0.38.1512.876" timestamp="1650686677560" />
+    <state x="356" y="210" key="Vcs.Push.Dialog.v2/0.38.1512.876/1512.25.1920.1055@0.38.1512.876" timestamp="1650696712390" />
     <state x="391" y="269" width="912" height="623" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1650199960646">
       <screen x="0" y="38" width="1512" height="879" />
     </state>
