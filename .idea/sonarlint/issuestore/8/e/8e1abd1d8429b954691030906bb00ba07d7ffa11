@@ -1,0 +1,10 @@
+
+j
+java:S1450"URemove the "length" field and declare it as a local variable in the relevant methods.( Ÿ®x
+E
+java:S1197"*Move the array designators [] to the type.(”ÇÆýÿÿÿÿÿ
+E
+java:S1197="*Move the array designators [] to the type.(ì…ãüüÿÿÿÿ
+S	java:S106C"9Replace this use of System.out or System.err by a logger.(°¯ÿÁüÿÿÿÿ
+N	java:S106D"9Replace this use of System.out or System.err by a logger.(×•œ²
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(àðÉôùÿÿÿÿ8ºÔ“Þð/

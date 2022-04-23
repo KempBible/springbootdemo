@@ -1,0 +1,15 @@
+
+Q
+java:S3740"/Provide the parametrized type for this generic.(ÊÛ¯ùúÿÿÿÿ8Ú¹ý›÷/
+Q
+java:S3740&"/Provide the parametrized type for this generic.(ÝÁÀ¤ÿÿÿÿÿ8Ð¾Šœ÷/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(å‚É¶úÿÿÿÿ8Þ¹ý›÷/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(îÇ¯½üÿÿÿÿ8ä¹ý›÷/
+]	java:S125"<This block of commented-out lines of code should be removed.(›–å‘ÿÿÿÿÿ8¨€†œ÷/
+X	java:S125"<This block of commented-out lines of code should be removed.(§ø‹8õÞ†œ÷/
+]	java:S125!"<This block of commented-out lines of code should be removed.(¹Ú”ûÿÿÿÿ8Ð½‡œ÷/
+Z	java:S106("9Replace this use of System.out or System.err by a logger.(‹³õäúÿÿÿÿ8×¾Šœ÷/
+]	java:S125*"<This block of commented-out lines of code should be removed.(¼ºÅùÿÿÿÿ8é¤“œ÷/
+]	java:S125."<This block of commented-out lines of code should be removed.(Á•ÇÓúÿÿÿÿ8õõ“œ÷/
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(­´ü“
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(·¨Öíýÿÿÿÿ

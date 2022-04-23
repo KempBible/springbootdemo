@@ -1,0 +1,12 @@
+
+G
+java:S1135"2Complete the task associated to this TODO comment.(£°§\
+t
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+N	java:S106"9Replace this use of System.out or System.err by a logger.(³Ï¸Œ
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(³Ú øüÿÿÿÿ
+N	java:S1063"9Replace this use of System.out or System.err by a logger.(÷îã«
+N	java:S1064"9Replace this use of System.out or System.err by a logger.(Ñéô”
+C
+java:S1604$"(Make this anonymous inner class a lambda(äë¬±üÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÂÐßŒÿÿÿÿÿ

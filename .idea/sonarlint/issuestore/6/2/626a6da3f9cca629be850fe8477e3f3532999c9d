@@ -1,0 +1,13 @@
+
+;
+java:S2676"Use the original value instead.(Œ‹¾8ÒÖ½Şğ/
+N	java:S106"9Replace this use of System.out or System.err by a logger.(µ©·¢
+J
+java:S1611""/Remove the parentheses around the "s" parameter(ğÄŸîşÿÿÿÿ
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(‚é€Şûÿÿÿÿ
+J
+java:S1611'"/Remove the parentheses around the "s" parameter(ü‹ñüÿÿÿÿ
+S	java:S106("9Replace this use of System.out or System.err by a logger.(‚é€Şûÿÿÿÿ
+S	java:S106,"9Replace this use of System.out or System.err by a logger.(…Àüçıÿÿÿÿ
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Û°“è
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ôøã­şÿÿÿÿ

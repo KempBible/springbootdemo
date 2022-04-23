@@ -1,0 +1,12 @@
+
+Ž
+java:S1130
+"qRemove the declaration of thrown exception 'java.text.ParseException', as it cannot be thrown from method's body.(ˆ…­Å8€«‹š÷/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(”éÁÓ8ƒ«‹š÷/
+e
+java:S3986"HMake sure that week Year "YYYY" is expected here instead of Year "yyyy".(«“³¢8…«‹š÷/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(³²ó¹ûÿÿÿÿ8†«‹š÷/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(”éÁÓ8†«‹š÷/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(”éÁÓ8†«‹š÷/
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Áº—çùÿÿÿÿ8ˆ«‹š÷/
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(â¹Èìûÿÿÿÿ8ü¦Þ˜÷/

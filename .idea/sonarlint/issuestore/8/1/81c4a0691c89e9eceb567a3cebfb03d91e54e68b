@@ -1,0 +1,9 @@
+
+{
+java:S1171
+"YMove the contents of this initializer to a standard constructor or to field initializers.(ÒÌâ–øÿÿÿÿ8ƒ»Ôÿó/
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÒÈßıÿÿÿÿ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(‚š‰1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(€ê­Î8ê™Òÿó/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(éç¬ùÿÿÿÿ8‹»Ôÿó/
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ó¢ı¾

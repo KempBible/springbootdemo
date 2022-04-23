@@ -1,0 +1,12 @@
+
+N	java:S106."9Replace this use of System.out or System.err by a logger.(¼ßÆ‰
+N	java:S106/"9Replace this use of System.out or System.err by a logger.(òê¥ı
+N	java:S1060"9Replace this use of System.out or System.err by a logger.(‚Šôø
+N	java:S1063"9Replace this use of System.out or System.err by a logger.(šè†
+T
+java:S4719H"9Replace charset name argument with StandardCharsets.UTF_8(ªÇ‹¼úÿÿÿÿ
+T
+java:S4719a"9Replace charset name argument with StandardCharsets.UTF_8(ªÇ‹¼úÿÿÿÿ
+P
+java:S1191"5Use classes from the Java API instead of Sun classes.(Ó¨Ôÿÿÿÿÿ
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‰Õ”É8ÊÕö˜÷/

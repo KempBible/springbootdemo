@@ -1,0 +1,25 @@
+
+t
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ƒÇãˆúÿÿÿÿ
+S	java:S106""9Replace this use of System.out or System.err by a logger.(ƒÇãˆúÿÿÿÿ
+t
+java:S2142%"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+\
+java:S30787"AUse an "AtomicInteger" for this field; its operations are atomic.(ï»õÜüÿÿÿÿ
+M	java:S1068"9Replace this use of System.out or System.err by a logger.(ü²É<
+N	java:S106>"9Replace this use of System.out or System.err by a logger.(ýÅ©Î
+\
+java:S3078A"AUse an "AtomicInteger" for this field; its operations are atomic.(¥–³áúÿÿÿÿ
+N	java:S106B"9Replace this use of System.out or System.err by a logger.(ªÄÉß
+N	java:S106G"9Replace this use of System.out or System.err by a logger.(Ý–éÖ
+>
+java:S1604"(Make this anonymous inner class a lambda(ðçô­
+>
+java:S1604"(Make this anonymous inner class a lambda(¶ì’š
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(²ò•’úÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ä¢¯íúÿÿÿÿ
+=
+java:S2189""Add an end condition to this loop.(˜ïˆžÿÿÿÿÿ
+=
+java:S2189""Add an end condition to this loop.(˜ïˆžÿÿÿÿÿ

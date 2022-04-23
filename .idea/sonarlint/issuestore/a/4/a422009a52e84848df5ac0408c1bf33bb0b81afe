@@ -1,0 +1,22 @@
+
+T
+java:S1854%"9Remove this useless assignment to local variable "empty".(ƒö¥†úÿÿÿÿ
+S
+java:S1854"=Remove this useless assignment to local variable "intStream".(ğÒ¿
+X
+java:S1854"=Remove this useless assignment to local variable "strStream".(Õã¿ıÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(éüÄŸ
+I
+java:S1481".Remove this unused "strStream" local variable.(Õã¿ıÿÿÿÿ
+E
+java:S1611"/Remove the parentheses around the "x" parameter(ğÒ¿
+D
+java:S1481".Remove this unused "intStream" local variable.(ğÒ¿
+V	java:S125 "<This block of commented-out lines of code should be removed.(ş·àıùÿÿÿÿ
+T
+java:S1612""9Replace this lambda with method reference 'Math::random'.(‰ú†äşÿÿÿÿ
+S	java:S106""9Replace this use of System.out or System.err by a logger.(‰ú†äşÿÿÿÿ
+E
+java:S1481%"*Remove this unused "empty" local variable.(ƒö¥†úÿÿÿÿ
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(”¤Ñ°
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ôøã­şÿÿÿÿ

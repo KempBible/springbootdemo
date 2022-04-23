@@ -1,0 +1,7 @@
+
+g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òιόÿÿÿÿ8ώ‘ϋ»χ/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(³…ίθόÿÿÿÿ8΄’ϋ»χ/
+M
+java:S1144"0Remove this unused private "getMD5Bytes" method.(θΰΫ΄8·’ϋ»χ/
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ώ®ƒ¤όÿÿÿÿ
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ι™ª’ÿÿÿÿÿ8Χ…ª½χ/

@@ -1,0 +1,6 @@
+
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ÔÂ›ô
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¸¦Ç
+ƒ
+java:S1488"hImmediately return this expression instead of assigning it to the temporary variable "newProxyInstance".(úİ¥ıÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¾­¶øÿÿÿÿ

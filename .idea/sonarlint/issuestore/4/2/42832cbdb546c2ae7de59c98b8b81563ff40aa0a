@@ -1,0 +1,15 @@
+
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(²ë¹Àùÿÿÿÿ8˜³ë¼÷/
+Z	java:S106""9Replace this use of System.out or System.err by a logger.(á¿Ü€úÿÿÿÿ8³ë¼÷/
+Z	java:S1061"9Replace this use of System.out or System.err by a logger.(Öğõıÿÿÿÿ8Ÿ³ë¼÷/
+K
+java:S21401")Use "java.util.Random.nextInt()" instead.(Öğõıÿÿÿÿ8Ÿ³ë¼÷/
+F
+java:S21402")Use "java.util.Random.nextInt()" instead.(Ê‹æë8 ³ë¼÷/
+v
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ø³Å•8 ³ë¼÷/
+{
+java:S2293 "YReplace the type specification in this constructor call with the diamond operator ("<>").(ÃÜÙ°úÿÿÿÿ8¡³ë¼÷/
+g	java:S101
+"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(…Œşøüÿÿÿÿ
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´áÄŒşÿÿÿÿ8ıí­½÷/

@@ -1,0 +1,10 @@
+
+K
+java:S2446"0"notify" may not wake up the appropriate thread.(°Í¶Êüÿÿÿÿ
+{
+java:S2273"`Move this call to "notify()" into a synchronized block to be sure the monitor on "this" is held.(°Í¶Êüÿÿÿÿ
+s
+java:S2273"^Move this call to "wait()" into a synchronized block to be sure the monitor on "this" is held.(ç£ŠM
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(õ»“ûüÿÿÿÿ
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(§¼ßî

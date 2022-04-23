@@ -1,0 +1,17 @@
+
+t	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(‰¶¹şÿÿÿÿ
+i	java:S116"ORename this field "LOCK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çĞîÜüÿÿÿÿ
+g
+java:S1845"LRename field "LOCK" to prevent any misunderstanding/clash with field "lock".(çĞîÜüÿÿÿÿ
+W
+java:S3078%"AUse an "AtomicInteger" for this field; its operations are atomic.(İ–›ñ
+Q
+java:S2274-";Remove this call to "await" or move it into a "while" loop.(ÆáÑ
+W
+java:S3078."AUse an "AtomicInteger" for this field; its operations are atomic.(İ–›ñ
+C	java:S108=")Either remove or fill this block of code.(…Í¼ûÿÿÿÿ
+{
+java:S2273^"`Move this call to "wait()" into a synchronized block to be sure the monitor on "Object" is held.(š“‡öüÿÿÿÿ
+U
+java:S2274^":Remove this call to "wait" or move it into a "while" loop.(š“‡öüÿÿÿÿ
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ìòòûÿÿÿÿ8Ş³€™÷/

@@ -1,0 +1,22 @@
+
+a
+java:S18541"?Remove this useless assignment to local variable "departments".(”²üúÿÿÿÿ8õÌ®™÷/
+N	java:S106."9Replace this use of System.out or System.err by a logger.(µˆœÑ
+Z	java:S106/"9Replace this use of System.out or System.err by a logger.(›òŒØøÿÿÿÿ8ıÌ®™÷/
+W	java:S1252"<This block of commented-out lines of code should be removed.(ó”Ã{8şÌ®™÷/
+T	java:S106:"9Replace this use of System.out or System.err by a logger.(­ÕÈM8ÿÌ®™÷/
+]	java:S1259"<This block of commented-out lines of code should be removed.(¢–”ãùÿÿÿÿ8ÿÌ®™÷/
+>
+java:S1116;"Remove this empty statement.(Åñ­õşÿÿÿÿ8€Í®™÷/
+U	java:S106C"9Replace this use of System.out or System.err by a logger.(ùŸÒÕ8…Í®™÷/
+Z	java:S106F"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ8‡Í®™÷/
+X	java:S125H"<This block of commented-out lines of code should be removed.(×­îÒ8ˆÍ®™÷/
+e
+java:S1192"HDefine a constant instead of duplicating this literal "version" 3 times.(ÀàÑĞ8ˆÍ®™÷/
+J
+java:S1604"(Make this anonymous inner class a lambda(µ¨Ãçùÿÿÿÿ8‰Í®™÷/
+E
+java:S1604""(Make this anonymous inner class a lambda(ÓÔ­—8‰Í®™÷/
+J
+java:S1604'"(Make this anonymous inner class a lambda(¼¾Îúÿÿÿÿ8‰Í®™÷/
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´áÄŒşÿÿÿÿ8Õç«™÷/

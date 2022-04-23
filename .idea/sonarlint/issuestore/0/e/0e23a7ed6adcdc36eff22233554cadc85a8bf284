@@ -1,0 +1,11 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÓéÃûÿÿÿÿ
+K
+java:S1612"5Replace this lambda with method reference '::equals'.(İñƒ´
+S	java:S106"9Replace this use of System.out or System.err by a logger.(€‚Í†üÿÿÿÿ
+E
+java:S1611"/Remove the parentheses around the "t" parameter(ãÒ¦‰
+N	java:S106"9Replace this use of System.out or System.err by a logger.(†İ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ñÜ´Å
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(°²‘Ïøÿÿÿÿ
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(É™ª’ÿÿÿÿÿ8Ã§©½÷/

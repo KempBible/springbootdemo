@@ -1,0 +1,18 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(”åÕ÷ûÿÿÿÿ
+U
+java:S1612"@Replace this lambda with method reference 'System.out::println'.(øÇös
+M	java:S106"9Replace this use of System.out or System.err by a logger.(øÇös
+T
+java:S1854">Remove this useless assignment to local variable "comparator".(ô¸ü¤
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Óô£è
+E
+java:S1481"/Remove this unused "comparator" local variable.(ô¸ü¤
+J
+java:S1611("/Remove the parentheses around the "s" parameter(£ºÁÃøÿÿÿÿ
+M	java:S106)"9Replace this use of System.out or System.err by a logger.(ƒÚáB
+M	java:S106."9Replace this use of System.out or System.err by a logger.(ƒÚáB
+>
+java:S1604"(Make this anonymous inner class a lambda(ƒûßª
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÁÀÅ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ôøã­şÿÿÿÿ

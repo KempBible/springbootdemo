@@ -1,0 +1,13 @@
+
+^
+java:S3986	"HMake sure that week Year "YYYY" is expected here instead of Year "yyyy".(àµò¯
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Æ‡Ú
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‰Í“¦ÿÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¬ó˜°ıÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Æ‡Ú
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‰Í“¦ÿÿÿÿÿ
+j
+java:S3986"HMake sure that week Year "YYYY" is expected here instead of Year "yyyy".(†§Ãèıÿÿÿÿ8‚Ã¸÷/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(›­ÿûıÿÿÿÿ8‚Ã¸÷/
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(öÍƒ½şÿÿÿÿ8¡¾§˜÷/
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(â¹Èìûÿÿÿÿ8²ƒ¨˜÷/

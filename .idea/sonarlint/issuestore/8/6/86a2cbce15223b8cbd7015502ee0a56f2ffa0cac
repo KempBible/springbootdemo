@@ -1,0 +1,13 @@
+
+S	java:S106("9Replace this use of System.out or System.err by a logger.(¨¶ÑÍþÿÿÿÿ
+S	java:S1065"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍþÿÿÿÿ
+J
+java:S1611:"/Remove the parentheses around the "e" parameter(¤êÉ€úÿÿÿÿ
+S	java:S106:"9Replace this use of System.out or System.err by a logger.(¤êÉ€úÿÿÿÿ
+J
+java:S1611>"/Remove the parentheses around the "e" parameter(Õ„ÑÀùÿÿÿÿ
+S	java:S106>"9Replace this use of System.out or System.err by a logger.(Õ„ÑÀùÿÿÿÿ
+N	java:S106B"9Replace this use of System.out or System.err by a logger.(êºŽÅ
+N	java:S106F"9Replace this use of System.out or System.err by a logger.(ýµ•Ô
+N	java:S106J"9Replace this use of System.out or System.err by a logger.(œð‰û
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ôøã­þÿÿÿÿ8áøñÝð/

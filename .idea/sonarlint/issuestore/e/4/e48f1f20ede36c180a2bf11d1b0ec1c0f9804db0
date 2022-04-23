@@ -1,0 +1,51 @@
+
+T
+java:S1854"9Remove this useless assignment to local variable "empty".(ÏúŠùÿÿÿÿ
+E
+java:S1481"*Remove this unused "empty" local variable.(ÏúŠùÿÿÿÿ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(şÂê|
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ÔÂè
+V	java:S125"<This block of commented-out lines of code should be removed.(–«×Âıÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ãª¨
+N	java:S106"9Replace this use of System.out or System.err by a logger.(’¤Å¥
+N	java:S106%"9Replace this use of System.out or System.err by a logger.(«‹Îõ
+I
+java:S1481'".Remove this unused "nullName1" local variable.(Óÿ¤Úùÿÿÿÿ
+N	java:S106)"9Replace this use of System.out or System.err by a logger.(¦Ã•
+S	java:S106/"9Replace this use of System.out or System.err by a logger.(ª¢ÌÔúÿÿÿÿ
+D
+java:S14810".Remove this unused "nullName2" local variable.(ˆîÕë
+M	java:S1065"9Replace this use of System.out or System.err by a logger.(÷—å
+V	java:S1251"<This block of commented-out lines of code should be removed.(‡¶Å©ùÿÿÿÿ
+S	java:S1068"9Replace this use of System.out or System.err by a logger.(ÒğÙ‹ıÿÿÿÿ
+S	java:S106:"9Replace this use of System.out or System.err by a logger.(¡Œıÿÿÿÿ
+S	java:S106="9Replace this use of System.out or System.err by a logger.(«‰¡øÿÿÿÿ
+S	java:S106A"9Replace this use of System.out or System.err by a logger.(ÿßŸéşÿÿÿÿ
+S	java:S106C"9Replace this use of System.out or System.err by a logger.(Öõışüÿÿÿÿ
+S	java:S106E"9Replace this use of System.out or System.err by a logger.(–™ğßşÿÿÿÿ
+N	java:S106F"9Replace this use of System.out or System.err by a logger.(³õ™Ë
+S	java:S106G"9Replace this use of System.out or System.err by a logger.(Ãƒœßşÿÿÿÿ
+S	java:S106H"9Replace this use of System.out or System.err by a logger.(ÆéÎûÿÿÿÿ
+S	java:S106I"9Replace this use of System.out or System.err by a logger.(Êô²ºúÿÿÿÿ
+N	java:S106J"9Replace this use of System.out or System.err by a logger.(´÷‹œ
+S	java:S106K"9Replace this use of System.out or System.err by a logger.(»÷„Ïøÿÿÿÿ
+N	java:S106N"9Replace this use of System.out or System.err by a logger.(¬’öö
+N	java:S106R"9Replace this use of System.out or System.err by a logger.(–İÅ
+S	java:S106V"9Replace this use of System.out or System.err by a logger.(—“äŒÿÿÿÿÿ
+S	java:S106X"9Replace this use of System.out or System.err by a logger.(—“äŒÿÿÿÿÿ
+N	java:S106["9Replace this use of System.out or System.err by a logger.(…¶Ø¹
+N	java:S106b"9Replace this use of System.out or System.err by a logger.(¨î—ª
+S	java:S106e"9Replace this use of System.out or System.err by a logger.(åş“úÿÿÿÿ
+S	java:S106w"9Replace this use of System.out or System.err by a logger.(ìÍ€àÿÿÿÿÿ
+N	java:S106y"9Replace this use of System.out or System.err by a logger.(ÃÿŒ‘
+M	java:S106|"9Replace this use of System.out or System.err by a logger.(š‘÷z
+S	java:S106~"9Replace this use of System.out or System.err by a logger.(‹»ºùùÿÿÿÿ
+T	java:S106ƒ"9Replace this use of System.out or System.err by a logger.(úÒ¼øıÿÿÿÿ
+]
+java:S1192$"GDefine a constant instead of duplicating this literal "binghe" 7 times.(¶´×À
+_
+java:S1192O"JDefine a constant instead of duplicating this literal "binghe001" 4 times.(¿ışi
+k	java:S1179"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íì¿Îùÿÿÿÿ
+f	java:S117d"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃÉ‘‘
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Í…ğ§
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÿÒÏ

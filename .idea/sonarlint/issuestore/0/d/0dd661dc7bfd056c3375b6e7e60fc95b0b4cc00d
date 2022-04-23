@@ -1,0 +1,86 @@
+
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Î­¢üÿÿÿÿ8‡Éğµ÷/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Î­¢üÿÿÿÿ8ˆÉğµ÷/
+Z	java:S106#"9Replace this use of System.out or System.err by a logger.(úéŸãúÿÿÿÿ8ˆÉğµ÷/
+Z	java:S1063"9Replace this use of System.out or System.err by a logger.(ËÊÒ½ûÿÿÿÿ8Éğµ÷/
+T	java:S1069"9Replace this use of System.out or System.err by a logger.(ŠáÀ!8–Éğµ÷/
+f
+java:S2147?"DCombine this catch with the one at line 61, which has the same body.(åşŒóùÿÿÿÿ8–Éğµ÷/
+{
+java:S2142="^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8—Éğµ÷/
+Z	java:S106B"9Replace this use of System.out or System.err by a logger.(å¶ªˆúÿÿÿÿ8—Éğµ÷/
+U	java:S106O"9Replace this use of System.out or System.err by a logger.(¦øõ£8¸Éğµ÷/
+]	java:S125T"<This block of commented-out lines of code should be removed.(§Ï© úÿÿÿÿ8¹Éğµ÷/
+N
+java:S1602V",Remove useless curly braces around statement(™ëóùÿÿÿÿ8¹Éğµ÷/
+Z	java:S106W"9Replace this use of System.out or System.err by a logger.(Î­¢üÿÿÿÿ8¹Éğµ÷/
+Z	java:S106_"9Replace this use of System.out or System.err by a logger.(ĞÃ‹ôıÿÿÿÿ8»Éğµ÷/
+Z	java:S106`"9Replace this use of System.out or System.err by a logger.(ËÊÒ½ûÿÿÿÿ8»Éğµ÷/
+U	java:S106l"9Replace this use of System.out or System.err by a logger.(¨Ê…ä8¼Éğµ÷/
+z
+java:S1612m"]Replace this lambda with method reference 'ç¼“å­˜ç»„ä»¶Caffeineç”¨æ³•::createExpensiveGraph'.(’Ší8½Éğµ÷/
+Z	java:S106o"9Replace this use of System.out or System.err by a logger.(›­»Ÿÿÿÿÿÿ8¾Éğµ÷/
+Z	java:S106q"9Replace this use of System.out or System.err by a logger.(™Œ‡’ûÿÿÿÿ8¾Éğµ÷/
+Z	java:S106t"9Replace this use of System.out or System.err by a logger.(Ï¾ûÿÿÿÿ8¿Éğµ÷/
+L
+java:S1172w"*Remove this unused method parameter "key".(¬´»¯ùÿÿÿÿ8¿Éğµ÷/
+Z	java:S106x"9Replace this use of System.out or System.err by a logger.(İìÜ¼üÿÿÿÿ8ÀÉğµ÷/
+V	java:S106‚"9Replace this use of System.out or System.err by a logger.(¨Ê…ä8ÁÉğµ÷/
+{
+java:S1612ƒ"]Replace this lambda with method reference 'ç¼“å­˜ç»„ä»¶Caffeineç”¨æ³•::createExpensiveGraph'.(’Ší8ÁÉğµ÷/
+[	java:S106…"9Replace this use of System.out or System.err by a logger.(›­»Ÿÿÿÿÿÿ8ÂÉğµ÷/
+[	java:S106‡"9Replace this use of System.out or System.err by a logger.(™Œ‡’ûÿÿÿÿ8ÂÉğµ÷/
+[	java:S106Š"9Replace this use of System.out or System.err by a logger.(Ï¾ûÿÿÿÿ8ÂÉğµ÷/
+V	java:S106‘"9Replace this use of System.out or System.err by a logger.(¨Ê…ä8ÅÉğµ÷/
+[	java:S106–"9Replace this use of System.out or System.err by a logger.(şö°üÿÿÿÿ8ÆÉğµ÷/
+V	java:S106"9Replace this use of System.out or System.err by a logger.(èà­8ÈÉğµ÷/
+[	java:S106¤"9Replace this use of System.out or System.err by a logger.(ãçÙìÿÿÿÿÿ8ÉÉğµ÷/
+{
+java:S1612©"]Replace this lambda with method reference 'ç¼“å­˜ç»„ä»¶Caffeineç”¨æ³•::createExpensiveGraph'.(’Ší8ÉÉğµ÷/
+[	java:S106«"9Replace this use of System.out or System.err by a logger.(›­»Ÿÿÿÿÿÿ8ÉÉğµ÷/
+[	java:S106­"9Replace this use of System.out or System.err by a logger.(™Œ‡’ûÿÿÿÿ8ÉÉğµ÷/
+V	java:S106°"9Replace this use of System.out or System.err by a logger.(Á¢–ã8ÉÉğµ÷/
+[	java:S106³"9Replace this use of System.out or System.err by a logger.(ï¹¡ûÿÿÿÿ8ÊÉğµ÷/
+V	java:S106¼"9Replace this use of System.out or System.err by a logger.(¨Ê…ä8ËÉğµ÷/
+m
+java:S1612½"OReplace this lambda with method reference 'ç¼“å­˜ç»„ä»¶Caffeineç”¨æ³•::loadDB'.(Åüò¼8ËÉğµ÷/
+U	java:S106¾"9Replace this use of System.out or System.err by a logger.(¸ØïU8ÌÉğµ÷/
+r
+java:S1215À"TDon't try to be smarter than the JVM, remove this call to run the garbage collector.(Ì°¬“8ÌÉğµ÷/
+[	java:S106Á"9Replace this use of System.out or System.err by a logger.(İè¬øÿÿÿÿ8ÌÉğµ÷/
+r
+java:S1215Ä"TDon't try to be smarter than the JVM, remove this call to run the garbage collector.(Ì°¬“8ÍÉğµ÷/
+V	java:S106Å"9Replace this use of System.out or System.err by a logger.(ºÙ„½8ÍÉğµ÷/
+r
+java:S1215È"TDon't try to be smarter than the JVM, remove this call to run the garbage collector.(Ì°¬“8ÍÉğµ÷/
+U	java:S106É"9Replace this use of System.out or System.err by a logger.(×Ë D8ÍÉğµ÷/
+r
+java:S1215Ì"TDon't try to be smarter than the JVM, remove this call to run the garbage collector.(Ì°¬“8ÍÉğµ÷/
+M
+java:S1172Ğ"*Remove this unused method parameter "key".(ªÆÛÏüÿÿÿÿ8ÎÉğµ÷/
+[	java:S106Ñ"9Replace this use of System.out or System.err by a logger.(İìÜ¼üÿÿÿÿ8ÏÉğµ÷/
+V	java:S106İ"9Replace this use of System.out or System.err by a logger.(Š†ƒÊ8ÙÉğµ÷/
+V	java:S106â"9Replace this use of System.out or System.err by a logger.(¨Ê…ä8ÚÉğµ÷/
+[	java:S106ç"9Replace this use of System.out or System.err by a logger.(Ş­“Îüÿÿÿÿ8ÚÉğµ÷/
+[	java:S106ì"9Replace this use of System.out or System.err by a logger.(Ş­“Îüÿÿÿÿ8ÚÉğµ÷/
+V	java:S106ô"9Replace this use of System.out or System.err by a logger.(¨Ê…ä8ÛÉğµ÷/
+V	java:S106÷"9Replace this use of System.out or System.err by a logger.(ë¸šú8İÉğµ÷/
+V	java:S106ú"9Replace this use of System.out or System.err by a logger.(ë¸šú8ŞÉğµ÷/
+`
+java:S1144[">Remove this unused private "createExpensiveGraphAsync" method.(ÓŠ¢ûÿÿÿÿ8ŞÉğµ÷/
+j
+java:S1192!"HDefine a constant instead of duplicating this literal "address" 3 times.(ôşü·úÿÿÿÿ8ßÉğµ÷/
+w
+java:S1192q"UDefine a constant instead of duplicating this literal "ç¬¬äºŒæ¬¡è·å–name:" 3 times.(™Œ‡’ûÿÿÿÿ8ßÉğµ÷/
+w
+java:S1192l"ZDefine a constant instead of duplicating this literal "Key %s was removed (%s)%n" 6 times.(¨Ê…ä8ßÉğµ÷/
+h
+java:S1192"FDefine a constant instead of duplicating this literal "name:" 5 times.(Î­¢üÿÿÿÿ8ßÉğµ÷/
+q
+java:S11923"ODefine a constant instead of duplicating this literal ",å½“å‰çº¿ç¨‹:" 3 times.(ËÊÒ½ûÿÿÿÿ8àÉğµ÷/
+w
+java:S1192o"UDefine a constant instead of duplicating this literal "ç¬¬ä¸€æ¬¡è·å–name:" 3 times.(›­»Ÿÿÿÿÿÿ8àÉğµ÷/
+E
+java:S1604\"(Make this anonymous inner class a lambda(ÄÛ£û8àÉğµ÷/
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ëÂ²Å
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¢Ö‡Ò8Û¬½÷/

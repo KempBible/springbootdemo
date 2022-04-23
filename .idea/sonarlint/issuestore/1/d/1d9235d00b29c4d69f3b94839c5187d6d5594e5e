@@ -1,0 +1,63 @@
+
+E
+java:S3740%"/Provide the parametrized type for this generic.(ìä»¢
+N
+java:S1854j"8Remove this useless assignment to local variable "dss1".(‹¦±¨
+E
+java:S1611"/Remove the parentheses around the "e" parameter(¨È…ø
+N	java:S106"9Replace this use of System.out or System.err by a logger.(‰€­”
+E
+java:S1611"/Remove the parentheses around the "e" parameter(½¬¥”
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¼—²šüÿÿÿÿ
+D
+java:S1611"/Remove the parentheses around the "e" parameter(è¤Ä
+S	java:S106 "9Replace this use of System.out or System.err by a logger.(¾¨€¥ûÿÿÿÿ
+E
+java:S1611""/Remove the parentheses around the "e" parameter(ò÷ÆĞ
+N	java:S106#"9Replace this use of System.out or System.err by a logger.(¼¡¨ò
+E
+java:S1611%"/Remove the parentheses around the "e" parameter(ìä»¢
+N	java:S106&"9Replace this use of System.out or System.err by a logger.(™è´
+S	java:S106)"9Replace this use of System.out or System.err by a logger.(³ğ¸ûÿÿÿÿ
+S	java:S106,"9Replace this use of System.out or System.err by a logger.(ƒË‚üùÿÿÿÿ
+N	java:S106/"9Replace this use of System.out or System.err by a logger.(ÍÄ¦
+N	java:S1063"9Replace this use of System.out or System.err by a logger.(‚¨Ö§
+S	java:S1065"9Replace this use of System.out or System.err by a logger.(üĞ€ùÿÿÿÿ
+N	java:S1067"9Replace this use of System.out or System.err by a logger.(»‰‚Œ
+N	java:S1069"9Replace this use of System.out or System.err by a logger.(èèî¤
+K
+java:S1611;"0Remove the parentheses around the "ch" parameter(òó–ìùÿÿÿÿ
+S	java:S106B"9Replace this use of System.out or System.err by a logger.(êÛÆ¾üÿÿÿÿ
+S	java:S106D"9Replace this use of System.out or System.err by a logger.(ÍÑñÒûÿÿÿÿ
+S	java:S106F"9Replace this use of System.out or System.err by a logger.(÷å«Õÿÿÿÿÿ
+S	java:S106H"9Replace this use of System.out or System.err by a logger.(ßÍ³´şÿÿÿÿ
+S	java:S106J"9Replace this use of System.out or System.err by a logger.(ï•Ü¬ùÿÿÿÿ
+N	java:S106M"9Replace this use of System.out or System.err by a logger.(«Ãıû
+M	java:S106P"9Replace this use of System.out or System.err by a logger.(–¥ìC
+S	java:S106S"9Replace this use of System.out or System.err by a logger.(Åù¹¹ıÿÿÿÿ
+N	java:S106V"9Replace this use of System.out or System.err by a logger.(ƒ±›
+M	java:S106Y"9Replace this use of System.out or System.err by a logger.(ƒÚáB
+N	java:S106\"9Replace this use of System.out or System.err by a logger.(äìÏ¤
+N	java:S106_"9Replace this use of System.out or System.err by a logger.( ë¬ø
+S	java:S106b"9Replace this use of System.out or System.err by a logger.(„µÅˆøÿÿÿÿ
+N	java:S106e"9Replace this use of System.out or System.err by a logger.(ÁÄüÜ
+S	java:S106h"9Replace this use of System.out or System.err by a logger.(ÓÀˆíúÿÿÿÿ
+?
+java:S1481j")Remove this unused "dss1" local variable.(‹¦±¨
+N	java:S106k"9Replace this use of System.out or System.err by a logger.(ÇÚñ“
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ôÊÉÛ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶ıüòûÿÿÿÿ
+M
+java:S3655F"2Call "max.isPresent()" before accessing the value.(÷å«Õÿÿÿÿÿ
+H
+java:S3655/"2Call "op2.isPresent()" before accessing the value.(ÍÄ¦
+H
+java:S36559"2Call "op3.isPresent()" before accessing the value.(èèî¤
+N
+java:S3655B"3Call "sum1.isPresent()" before accessing the value.(êÛÆ¾üÿÿÿÿ
+G
+java:S3655&"1Call "op.isPresent()" before accessing the value.(™è´
+I
+java:S3655\"3Call "max1.isPresent()" before accessing the value.(äìÏ¤
+R
+java:S36554"7Call "Optional#isPresent()" before accessing the value.(¶¬¬•ùÿÿÿÿ

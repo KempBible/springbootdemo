@@ -1,0 +1,16 @@
+
+g	java:S112&"FDefine and throw a dedicated exception instead of using a generic one.(ΠΥΕύÿÿÿÿ8—’ήπ/
+g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(®ΓΥψÿÿÿÿ8’ήπ/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ήόΨΰύÿÿÿÿ8©’ήπ/
+T	java:S106-"9Replace this use of System.out or System.err by a logger.(τ ¤q8°’ήπ/
+Z	java:S106."9Replace this use of System.out or System.err by a logger.(™–Όÿÿÿÿÿ8±’ήπ/
+Z	java:S1060"9Replace this use of System.out or System.err by a logger.(μΏβϋÿÿÿÿ8±’ήπ/
+J
+java:S1604"(Make this anonymous inner class a lambda(ΞΨΊωÿÿÿÿ8²’ήπ/
+w
+java:S1488"ZImmediately return this expression instead of assigning it to the temporary variable "rr".(Ι§“Ε8³’ήπ/
+t
+java:S1104"RMake caches a static final constant or non-public and provide accessors if needed.(ίε»ήÿÿÿÿÿ8³’ήπ/
+N
+java:S1444",Make this "public static caches" field final(ίε»ήÿÿÿÿÿ8΄’ήπ/
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ΆΦ‡Ò8«άχ/

@@ -1,0 +1,7 @@
+
+W
+java:S2209"5Change this instance-reference to a static reference.(åĞ‡şÿÿÿÿ8ÔåÄşó/
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¢ù¹¤
+W	java:S125"<This block of commented-out lines of code should be removed.(ô€øJ8ü‹Åşó/
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¢ù¹¤
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ó¢ı¾
