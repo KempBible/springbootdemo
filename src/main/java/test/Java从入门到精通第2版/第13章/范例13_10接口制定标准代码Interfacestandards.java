@@ -20,6 +20,19 @@ class Print implements USB{ //打印机实现了USB接口标准
     }
 }
 
+class Flash implements USB{ // U盘实现了USB接口标准
+
+    @Override
+    public void work() {
+        System.out.println("U盘使用USB接口，连接开始工作");
+    }
+}
 
 public class 范例13_10接口制定标准代码Interfacestandards {
+    public static void main(String[] args) {
+        Computer computer = new Computer();
+        computer.plugin(new Print()); // 在电话
+        computer.plugin(new Flash()); // 在电话上使用U盘
+    }
 }
+

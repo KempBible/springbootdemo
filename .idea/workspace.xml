@@ -17,16 +17,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f24532d7-4c3e-4fe6-9d7e-dab15c8a2538" name="Default Changelist" comment="test">
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/Java从入门到精通第2版/第12章/范例12_23隐藏子类的成员.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/Java从入门到精通第2版/第13章/范例13_10接口制定标准代码Interfacestandards.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/Java从入门到精通第2版/第13章/范例13_3验证static定义的内部抽象类代码StaticInnerAbstractClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/Java从入门到精通第2版/第13章/范例13_4模板设计模式代码TemplateMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/Java从入门到精通第2版/第13章/范例13_5带default方法接口的实现代码Interfacedefault.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/Java从入门到精通第2版/第13章/范例13_6仅有default方法接口的使用代码Interfacedefaultonly.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/Java从入门到精通第2版/第13章/范例13_7子类继承多个接口的应用代码InterfaceDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/Java从入门到精通第2版/第13章/范例13_8继承抽象类实现接口代码ExtendsInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/Java从入门到精通第2版/第13章/范例13_9一个接口可继承多个接口代码AbstractInterfaces.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/Java从入门到精通第2版/第13章/范例13_11接口的作用代码SimpleFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/Java从入门到精通第2版/第13章/范例13_12工厂模式代码Factory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/Java从入门到精通第2版/第13章/范例13_13代理设计模式代码Proxytest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/Java从入门到精通第2版/第13章/范例13_10接口制定标准代码Interfacestandards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/Java从入门到精通第2版/第13章/范例13_10接口制定标准代码Interfacestandards.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -160,9 +155,9 @@
       <command value="mvn release:perform" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.范例13_9一个接口可继承多个接口代码AbstractInterfaces">
-    <configuration name="范例13_5带default方法接口的实现代码Interfacedefault" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.Java从入门到精通第2版.第13章.范例13_5带default方法接口的实现代码Interfacedefault" />
+  <component name="RunManager" selected="Application.范例13_13代理设计模式代码Proxytest">
+    <configuration name="范例13_11接口的作用代码SimpleFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.Java从入门到精通第2版.第13章.范例13_11接口的作用代码SimpleFactory" />
       <module name="springbootdemo" />
       <extension name="coverage">
         <pattern>
@@ -174,8 +169,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="范例13_6仅有default方法接口的使用代码Interfacedefaultonly" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.Java从入门到精通第2版.第13章.范例13_6仅有default方法接口的使用代码Interfacedefaultonly" />
+    <configuration name="范例13_12工厂模式代码Factory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.Java从入门到精通第2版.第13章.范例13_12工厂模式代码Factory" />
       <module name="springbootdemo" />
       <extension name="coverage">
         <pattern>
@@ -187,8 +182,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="范例13_7子类继承多个接口的应用代码InterfaceDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.Java从入门到精通第2版.第13章.范例13_7子类继承多个接口的应用代码InterfaceDemo" />
+    <configuration name="范例13_13代理设计模式代码Proxytest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.Java从入门到精通第2版.第13章.范例13_13代理设计模式代码Proxytest" />
       <module name="springbootdemo" />
       <extension name="coverage">
         <pattern>
@@ -264,19 +259,19 @@
     <list>
       <item itemvalue="Application.别瞎写工具类了Spring自带的不香吗" />
       <item itemvalue="Spring Boot.SpringbootdemoApplication" />
-      <item itemvalue="Application.范例13_5带default方法接口的实现代码Interfacedefault" />
-      <item itemvalue="Application.范例13_6仅有default方法接口的使用代码Interfacedefaultonly" />
-      <item itemvalue="Application.范例13_7子类继承多个接口的应用代码InterfaceDemo" />
       <item itemvalue="Application.范例13_8继承抽象类实现接口代码ExtendsInterface" />
       <item itemvalue="Application.范例13_9一个接口可继承多个接口代码AbstractInterfaces" />
+      <item itemvalue="Application.范例13_11接口的作用代码SimpleFactory" />
+      <item itemvalue="Application.范例13_12工厂模式代码Factory" />
+      <item itemvalue="Application.范例13_13代理设计模式代码Proxytest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.范例13_13代理设计模式代码Proxytest" />
+        <item itemvalue="Application.范例13_12工厂模式代码Factory" />
+        <item itemvalue="Application.范例13_11接口的作用代码SimpleFactory" />
         <item itemvalue="Application.范例13_9一个接口可继承多个接口代码AbstractInterfaces" />
         <item itemvalue="Application.范例13_8继承抽象类实现接口代码ExtendsInterface" />
-        <item itemvalue="Application.范例13_7子类继承多个接口的应用代码InterfaceDemo" />
-        <item itemvalue="Application.范例13_6仅有default方法接口的使用代码Interfacedefaultonly" />
-        <item itemvalue="Application.范例13_5带default方法接口的实现代码Interfacedefault" />
       </list>
     </recent_temporary>
   </component>
@@ -353,7 +348,7 @@
       <workItem from="1650513013260" duration="12749000" />
       <workItem from="1650695170242" duration="665000" />
       <workItem from="1650695924131" duration="93000" />
-      <workItem from="1650696056487" duration="24908000" />
+      <workItem from="1650696056487" duration="28014000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1650695268153</created>
@@ -411,7 +406,21 @@
       <option name="project" value="LOCAL" />
       <updated>1650723710060</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="test">
+      <created>1650813022072</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1650813022072</updated>
+    </task>
+    <task id="LOCAL-00010" summary="test">
+      <created>1650813070841</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1650813070843</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,8 +480,8 @@
       <screen x="0" y="38" width="1512" height="877" />
     </state>
     <state x="394" y="218" key="#com.intellij.ide.util.ExportDialog/0.38.1512.877/1512.25.1920.1055@0.38.1512.877" timestamp="1650358797426" />
-    <state x="613" y="243" key="#com.intellij.ide.util.MemberChooser" timestamp="1650788863954">
-      <screen x="0" y="38" width="1512" height="884" />
+    <state x="613" y="244" key="#com.intellij.ide.util.MemberChooser" timestamp="1650815926866">
+      <screen x="0" y="38" width="1512" height="886" />
     </state>
     <state x="-1730" y="258" key="#com.intellij.ide.util.MemberChooser/-2560.0.2048.1112/0.0.2048.1112@-2560.0.2048.1112" timestamp="1646375563225" />
     <state x="830" y="258" key="#com.intellij.ide.util.MemberChooser/-2560.0.2048.1112/0.0.2048.1112@0.0.2048.1112" timestamp="1647084466179" />
@@ -486,8 +495,9 @@
     <state x="613" y="242" key="#com.intellij.ide.util.MemberChooser/0.38.1512.882/1512.25.1920.1055@0.38.1512.882" timestamp="1650190024750" />
     <state x="613" y="243" key="#com.intellij.ide.util.MemberChooser/0.38.1512.884/1512.25.1920.1055@0.38.1512.884" timestamp="1650788863954" />
     <state x="613" y="244" key="#com.intellij.ide.util.MemberChooser/0.38.1512.885/1512.25.1920.1055@0.38.1512.885" timestamp="1650787109300" />
-    <state x="613" y="244" key="#com.intellij.ide.util.MemberChooser/0.38.1512.886/1512.25.1920.1055@0.38.1512.886" timestamp="1649584586948" />
+    <state x="613" y="244" key="#com.intellij.ide.util.MemberChooser/0.38.1512.886/1512.25.1920.1055@0.38.1512.886" timestamp="1650815926866" />
     <state x="613" y="244" key="#com.intellij.ide.util.MemberChooser/0.38.1512.887/1512.25.1920.1055@0.38.1512.887" timestamp="1649516420125" />
+    <state x="613" y="244" key="#com.intellij.ide.util.MemberChooser/0.38.1512.888/1512.25.1920.1055@0.38.1512.888" timestamp="1650813908330" />
     <state x="2290" y="250" key="#com.intellij.ide.util.MemberChooser/0.38.1512.944/1512.0.1920.1080@1512.0.1920.1080" timestamp="1648562677754" />
     <state x="2051" y="482" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1649140870464">
       <screen x="1512" y="25" width="1920" height="1055" />
@@ -534,10 +544,11 @@
     <state width="472" height="466" key="DebuggerActiveHint/-2560.0.2048.1112/0.0.2048.1112@0.0.2048.1112" timestamp="1647085838921" />
     <state width="474" height="443" key="DebuggerActiveHint/0.38.1512.876/1512.25.1920.1055@1512.25.1920.1055" timestamp="1649080750247" />
     <state width="421" height="371" key="DebuggerActiveHint/0.38.1512.882/1512.25.1920.1055@0.38.1512.882" timestamp="1650113153592" />
-    <state x="100" y="138" width="1312" height="672" key="DiffContextDialog" timestamp="1650723722709">
-      <screen x="0" y="38" width="1512" height="874" />
+    <state x="100" y="140" width="1312" height="672" key="DiffContextDialog" timestamp="1650813088827">
+      <screen x="0" y="38" width="1512" height="889" />
     </state>
     <state x="100" y="138" width="1312" height="672" key="DiffContextDialog/0.38.1512.874/1512.25.1920.1055@0.38.1512.874" timestamp="1650723722709" />
+    <state x="100" y="140" key="DiffContextDialog/0.38.1512.889/1512.25.1920.1055@0.38.1512.889" timestamp="1650813088827" />
     <state x="805" y="312" key="FileChooserDialogImpl" timestamp="1647005126460">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -551,8 +562,8 @@
     </state>
     <state x="870" y="365" key="Github.ShareDialog/0.38.1512.872/1512.25.1920.1055@0.38.1512.872" timestamp="1650697453591" />
     <state x="606" y="374" key="Github.ShareDialog/0.38.1512.876/1512.25.1920.1055@0.38.1512.876" timestamp="1650686402861" />
-    <state width="1470" height="281" key="GridCell.Tab.0.bottom" timestamp="1650788443987">
-      <screen x="0" y="38" width="1512" height="884" />
+    <state width="1470" height="290" key="GridCell.Tab.0.bottom" timestamp="1650815534467">
+      <screen x="0" y="38" width="1512" height="886" />
     </state>
     <state width="2005" height="456" key="GridCell.Tab.0.bottom/-2560.0.2048.1112/0.0.2048.1112@-2560.0.2048.1112" timestamp="1646900574419" />
     <state width="2005" height="316" key="GridCell.Tab.0.bottom/-2560.0.2048.1112/0.0.2048.1112@0.0.2048.1112" timestamp="1647086955289" />
@@ -568,15 +579,15 @@
     <state width="1470" height="357" key="GridCell.Tab.0.bottom/0.38.1512.882/1512.25.1920.1055@0.38.1512.882" timestamp="1650340692562" />
     <state width="1470" height="281" key="GridCell.Tab.0.bottom/0.38.1512.884/1512.25.1920.1055@0.38.1512.884" timestamp="1650788443987" />
     <state width="1470" height="281" key="GridCell.Tab.0.bottom/0.38.1512.885/1512.25.1920.1055@0.38.1512.885" timestamp="1650787445953" />
-    <state width="1470" height="303" key="GridCell.Tab.0.bottom/0.38.1512.886/1512.25.1920.1055@0.38.1512.886" timestamp="1649599796409" />
+    <state width="1470" height="290" key="GridCell.Tab.0.bottom/0.38.1512.886/1512.25.1920.1055@0.38.1512.886" timestamp="1650815534467" />
     <state width="1878" height="354" key="GridCell.Tab.0.bottom/0.38.1512.886/1512.25.1920.1055@1512.25.1920.1055" timestamp="1648018512663" />
     <state width="1470" height="296" key="GridCell.Tab.0.bottom/0.38.1512.887/1512.25.1920.1055@0.38.1512.887" timestamp="1650112729489" />
     <state width="1878" height="365" key="GridCell.Tab.0.bottom/0.38.1512.887/1512.25.1920.1055@1512.25.1920.1055" timestamp="1648023197955" />
     <state width="1470" height="328" key="GridCell.Tab.0.bottom/0.38.1512.888/1512.25.1920.1055@0.38.1512.888" timestamp="1649572213896" />
     <state width="1878" height="290" key="GridCell.Tab.0.bottom/0.38.1512.944/1512.0.1920.1080@1512.0.1920.1080" timestamp="1648562481817" />
     <state width="1470" height="293" key="GridCell.Tab.0.bottom/0.38.1512.944/1512.25.1920.977@0.38.1512.944" timestamp="1650186145832" />
-    <state width="1470" height="281" key="GridCell.Tab.0.center" timestamp="1650788443987">
-      <screen x="0" y="38" width="1512" height="884" />
+    <state width="1470" height="290" key="GridCell.Tab.0.center" timestamp="1650815534465">
+      <screen x="0" y="38" width="1512" height="886" />
     </state>
     <state width="2005" height="456" key="GridCell.Tab.0.center/-2560.0.2048.1112/0.0.2048.1112@-2560.0.2048.1112" timestamp="1646900574419" />
     <state width="2005" height="316" key="GridCell.Tab.0.center/-2560.0.2048.1112/0.0.2048.1112@0.0.2048.1112" timestamp="1647086955289" />
@@ -592,15 +603,15 @@
     <state width="1470" height="357" key="GridCell.Tab.0.center/0.38.1512.882/1512.25.1920.1055@0.38.1512.882" timestamp="1650340692562" />
     <state width="1470" height="281" key="GridCell.Tab.0.center/0.38.1512.884/1512.25.1920.1055@0.38.1512.884" timestamp="1650788443987" />
     <state width="1470" height="281" key="GridCell.Tab.0.center/0.38.1512.885/1512.25.1920.1055@0.38.1512.885" timestamp="1650787445952" />
-    <state width="1470" height="303" key="GridCell.Tab.0.center/0.38.1512.886/1512.25.1920.1055@0.38.1512.886" timestamp="1649599796408" />
+    <state width="1470" height="290" key="GridCell.Tab.0.center/0.38.1512.886/1512.25.1920.1055@0.38.1512.886" timestamp="1650815534465" />
     <state width="1878" height="354" key="GridCell.Tab.0.center/0.38.1512.886/1512.25.1920.1055@1512.25.1920.1055" timestamp="1648018512663" />
     <state width="1470" height="296" key="GridCell.Tab.0.center/0.38.1512.887/1512.25.1920.1055@0.38.1512.887" timestamp="1650112729488" />
     <state width="1878" height="365" key="GridCell.Tab.0.center/0.38.1512.887/1512.25.1920.1055@1512.25.1920.1055" timestamp="1648023197955" />
     <state width="1470" height="328" key="GridCell.Tab.0.center/0.38.1512.888/1512.25.1920.1055@0.38.1512.888" timestamp="1649572213895" />
     <state width="1878" height="290" key="GridCell.Tab.0.center/0.38.1512.944/1512.0.1920.1080@1512.0.1920.1080" timestamp="1648562481816" />
     <state width="1470" height="293" key="GridCell.Tab.0.center/0.38.1512.944/1512.25.1920.977@0.38.1512.944" timestamp="1650186145831" />
-    <state width="1470" height="281" key="GridCell.Tab.0.left" timestamp="1650788443985">
-      <screen x="0" y="38" width="1512" height="884" />
+    <state width="1470" height="290" key="GridCell.Tab.0.left" timestamp="1650815534464">
+      <screen x="0" y="38" width="1512" height="886" />
     </state>
     <state width="2005" height="456" key="GridCell.Tab.0.left/-2560.0.2048.1112/0.0.2048.1112@-2560.0.2048.1112" timestamp="1646900574419" />
     <state width="2005" height="316" key="GridCell.Tab.0.left/-2560.0.2048.1112/0.0.2048.1112@0.0.2048.1112" timestamp="1647086955288" />
@@ -616,15 +627,15 @@
     <state width="1470" height="357" key="GridCell.Tab.0.left/0.38.1512.882/1512.25.1920.1055@0.38.1512.882" timestamp="1650340692561" />
     <state width="1470" height="281" key="GridCell.Tab.0.left/0.38.1512.884/1512.25.1920.1055@0.38.1512.884" timestamp="1650788443985" />
     <state width="1470" height="281" key="GridCell.Tab.0.left/0.38.1512.885/1512.25.1920.1055@0.38.1512.885" timestamp="1650787445952" />
-    <state width="1470" height="303" key="GridCell.Tab.0.left/0.38.1512.886/1512.25.1920.1055@0.38.1512.886" timestamp="1649599796407" />
+    <state width="1470" height="290" key="GridCell.Tab.0.left/0.38.1512.886/1512.25.1920.1055@0.38.1512.886" timestamp="1650815534464" />
     <state width="1878" height="354" key="GridCell.Tab.0.left/0.38.1512.886/1512.25.1920.1055@1512.25.1920.1055" timestamp="1648018512662" />
     <state width="1470" height="296" key="GridCell.Tab.0.left/0.38.1512.887/1512.25.1920.1055@0.38.1512.887" timestamp="1650112729488" />
     <state width="1878" height="365" key="GridCell.Tab.0.left/0.38.1512.887/1512.25.1920.1055@1512.25.1920.1055" timestamp="1648023197954" />
     <state width="1470" height="328" key="GridCell.Tab.0.left/0.38.1512.888/1512.25.1920.1055@0.38.1512.888" timestamp="1649572213894" />
     <state width="1878" height="290" key="GridCell.Tab.0.left/0.38.1512.944/1512.0.1920.1080@1512.0.1920.1080" timestamp="1648562481816" />
     <state width="1470" height="293" key="GridCell.Tab.0.left/0.38.1512.944/1512.25.1920.977@0.38.1512.944" timestamp="1650186145829" />
-    <state width="1470" height="281" key="GridCell.Tab.0.right" timestamp="1650788443987">
-      <screen x="0" y="38" width="1512" height="884" />
+    <state width="1470" height="290" key="GridCell.Tab.0.right" timestamp="1650815534466">
+      <screen x="0" y="38" width="1512" height="886" />
     </state>
     <state width="2005" height="456" key="GridCell.Tab.0.right/-2560.0.2048.1112/0.0.2048.1112@-2560.0.2048.1112" timestamp="1646900574419" />
     <state width="2005" height="316" key="GridCell.Tab.0.right/-2560.0.2048.1112/0.0.2048.1112@0.0.2048.1112" timestamp="1647086955289" />
@@ -640,7 +651,7 @@
     <state width="1470" height="357" key="GridCell.Tab.0.right/0.38.1512.882/1512.25.1920.1055@0.38.1512.882" timestamp="1650340692562" />
     <state width="1470" height="281" key="GridCell.Tab.0.right/0.38.1512.884/1512.25.1920.1055@0.38.1512.884" timestamp="1650788443987" />
     <state width="1470" height="281" key="GridCell.Tab.0.right/0.38.1512.885/1512.25.1920.1055@0.38.1512.885" timestamp="1650787445953" />
-    <state width="1470" height="303" key="GridCell.Tab.0.right/0.38.1512.886/1512.25.1920.1055@0.38.1512.886" timestamp="1649599796409" />
+    <state width="1470" height="290" key="GridCell.Tab.0.right/0.38.1512.886/1512.25.1920.1055@0.38.1512.886" timestamp="1650815534466" />
     <state width="1878" height="354" key="GridCell.Tab.0.right/0.38.1512.886/1512.25.1920.1055@1512.25.1920.1055" timestamp="1648018512663" />
     <state width="1470" height="296" key="GridCell.Tab.0.right/0.38.1512.887/1512.25.1920.1055@0.38.1512.887" timestamp="1650112729489" />
     <state width="1878" height="365" key="GridCell.Tab.0.right/0.38.1512.887/1512.25.1920.1055@1512.25.1920.1055" timestamp="1648023197955" />
@@ -798,12 +809,13 @@
     </state>
     <state width="500" height="436" key="SwitcherDM/0.38.1512.879/1512.25.1920.1055@0.38.1512.879" timestamp="1650376309108" />
     <state width="500" height="445" key="SwitcherDM/0.38.1512.887/1512.25.1920.1055@1512.25.1920.1055" timestamp="1648018181882" />
-    <state x="356" y="210" key="Vcs.Push.Dialog.v2" timestamp="1650723723956">
-      <screen x="0" y="38" width="1512" height="874" />
+    <state x="356" y="213" key="Vcs.Push.Dialog.v2" timestamp="1650813091380">
+      <screen x="0" y="38" width="1512" height="889" />
     </state>
     <state x="356" y="219" key="Vcs.Push.Dialog.v2/0.32.1512.950/1512.25.1920.1055@0.32.1512.950" timestamp="1650696150241" />
     <state x="356" y="210" key="Vcs.Push.Dialog.v2/0.38.1512.874/1512.25.1920.1055@0.38.1512.874" timestamp="1650723723956" />
     <state x="356" y="210" key="Vcs.Push.Dialog.v2/0.38.1512.876/1512.25.1920.1055@0.38.1512.876" timestamp="1650696712390" />
+    <state x="356" y="213" key="Vcs.Push.Dialog.v2/0.38.1512.889/1512.25.1920.1055@0.38.1512.889" timestamp="1650813091380" />
     <state x="547" y="392" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1650698080906">
       <screen x="0" y="38" width="1512" height="874" />
     </state>
@@ -823,8 +835,8 @@
       <screen x="0" y="38" width="1512" height="885" />
     </state>
     <state x="346" y="139" key="editAsTableFormatDialogDimension/0.38.1512.885/1512.25.1920.1055@0.38.1512.885" timestamp="1650107365917" />
-    <state x="570" y="179" width="788" height="533" key="find.popup" timestamp="1650697649724">
-      <screen x="0" y="38" width="1512" height="874" />
+    <state x="570" y="181" width="788" height="543" key="find.popup" timestamp="1650813052251">
+      <screen x="0" y="38" width="1512" height="889" />
     </state>
     <state x="-1857" y="289" width="961" height="534" key="find.popup/-2560.0.2048.1112/0.0.2048.1112@-2560.0.2048.1112" timestamp="1646900447624" />
     <state x="772" y="178" width="1066" height="534" key="find.popup/-2560.0.2048.1112/0.0.2048.1112@0.0.2048.1112" timestamp="1647086848387" />
@@ -837,6 +849,7 @@
     <state x="570" y="180" width="788" height="540" key="find.popup/0.38.1512.885/1512.25.1920.1055@0.38.1512.885" timestamp="1650107315679" />
     <state x="570" y="180" width="788" height="540" key="find.popup/0.38.1512.886/1512.25.1920.1055@0.38.1512.886" timestamp="1648377218304" />
     <state x="2236" y="194" width="1000" height="507" key="find.popup/0.38.1512.887/1512.25.1920.1055@1512.25.1920.1055" timestamp="1648023083131" />
+    <state x="570" y="181" width="788" height="543" key="find.popup/0.38.1512.889/1512.25.1920.1055@0.38.1512.889" timestamp="1650813052251" />
     <state x="569" y="368" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1650697140662">
       <screen x="0" y="38" width="1512" height="874" />
     </state>
