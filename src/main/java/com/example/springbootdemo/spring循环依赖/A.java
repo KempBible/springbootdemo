@@ -1,5 +1,6 @@
 //package com.example.springbootdemo.spring循环依赖;
 //
+//import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.stereotype.Component;
 //
 ///**
@@ -10,12 +11,12 @@
 //@Component
 //public class A {
 //
-////    @Autowired
-////    private B b;
+//    @Autowired
+//    private B b;
 //
-////    public A(B b) {
-////        this.b = b;
-////    }
+//    public A(B b) {
+//        this.b = b;
+//    }
 //
 //    public void sout() {
 //        System.out.println("===A===");

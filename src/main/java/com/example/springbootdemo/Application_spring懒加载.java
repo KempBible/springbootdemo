@@ -1,5 +1,6 @@
 //package com.example.springbootdemo;
 //
+//import com.example.springbootdemo.spring循环依赖.A;
 //import org.mybatis.spring.annotation.MapperScan;
 //import org.springframework.boot.autoconfigure.SpringBootApplication;
 //import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -15,7 +16,7 @@
 //
 //    public static void main(String[] args) {
 //        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext("com.example.springbootdemo.spring循环依赖");
-////        A a = context.getBean(A.class);
+//        A a = context.getBean(A.class);
 ////        a.sout();
 //    }
 //}
