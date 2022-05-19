@@ -23,7 +23,7 @@
         <setting name="validation-enabled" value="true" />
         <datasource-mapping>
           <factory-entry name="Entities" />
-          <factory-entry name="springbootdemo" />
+          <factory-entry name="springbootdemo" value="7b946987-50d2-45a6-8f22-4f70437ebd10" />
         </datasource-mapping>
         <naming-strategy-map />
       </configuration>
