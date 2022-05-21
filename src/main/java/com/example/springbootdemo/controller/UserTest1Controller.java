@@ -5,9 +5,7 @@ import com.example.springbootdemo.model.UserTest1;
 import com.example.springbootdemo.service.UserTest1Service;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -35,4 +33,66 @@ public class UserTest1Controller {
         }
         return list;
     }
+
+    @GetMapping("/CrudTestUser")
+    public List<UserTest1> CrudTestUser(@RequestParam("username") String username){
+        //Dto和DtoUtil是我自己封装的工具类 同志们直接返回List就行
+        return userTest1Service.likeListUser(username);
+    }
+
+    @GetMapping("/pageList")
+    public List<UserTest1> pageList(@RequestParam("current")int current, @RequestParam("size")int size){
+        //Dto和DtoUtil是我自己封装的工具类 同志们直接返回List就行
+        return userTest1Service.pageList(current, size);
+    }
+
+    @PostMapping("addUser")
+    public String addUser(@RequestBody UserTest1 userTest1){
+        int num = userTest1Service.addUser(userTest1);
+        if (num > 0){
+            return "添加成功";
+       }else {
+            return "添加失败";
+        }
+    }
+
+    @DeleteMapping("deleteUser")
+    public String deleteUser(@RequestParam("id") int id){
+        if (userTest1Service.deleteUser(id)){
+            return "删除成功";
+        }else {
+            return "删除失败";
+        }
+    }
+
+    @GetMapping("testVersion")
+    public void testVersion(){
+        UserTest1 userTest1 = new UserTest1();
+        userTest1.setUsername("tom");
+        userTest1.setAge(10);
+        userTest1.setTel(120);
+        //先执行插入操作
+        userTest1Service.addUser(userTest1);
+
+        //查询一次
+        userTest1Service.list().forEach(System.out::println);
+        userTest1.setUsername("jarry");
+        //执行修改操作
+        userTest1Service.update(userTest1, null);
+        //再查询一次
+        userTest1Service.list().forEach(System.out::println);
+    }
+
+    @PostMapping("testVersion1")
+    public void testVersion1(){
+        UserTest1 userTest1 = userTest1Service.getById(37);
+        System.out.println(userTest1);
+        userTest1.setUsername("jarry");
+        //执行修改操作
+        userTest1Service.update(userTest1, null);
+        //再查询一次
+        System.out.println(userTest1Service.getById(37));
+    }
+
+
 }

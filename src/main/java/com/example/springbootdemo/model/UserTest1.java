@@ -3,9 +3,7 @@ package com.example.springbootdemo.model;
 import java.io.Serializable;
 import java.util.Date;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
 
 /**
@@ -13,43 +11,58 @@ import lombok.Data;
  * @TableName user_test1
  */
 @Data
+//指定数据库表名称 user_test1
 @TableName("user_test1")
 public class UserTest1 implements Serializable {
     /**
-     * 
+     * 主键id 设置自增长策略
      */
-    @TableId(type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
     /**
-     * 
+     * 用户名称
      */
+    @TableField(value = "username")
     private String username;
 
     /**
-     * 
+     * 年龄
      */
+    @TableField(value = "age")
     private Integer age;
 
     /**
-     * 
+     * 电话
      */
+    @TableField(value = "tel")
     private Integer tel;
 
     /**
-     * 
+     * 创建时间
      */
+    @TableField(value = "create_time", fill = FieldFill.INSERT)
     private Date createTime;
 
     /**
-     * 
+     * 最后修改时间
      */
+    @TableField(value = "update_time", fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
 
     /**
-     * 
+     * 版本号（用于乐观锁，默认为1）
      */
+    @Version
+    @TableField(value = "version", fill = FieldFill.INSERT)
     private Integer version;
+
+    /**
+     * 版本号（用于乐观锁，默认为1）
+     */
+    @TableLogic(value = "0", delval = "1")
+    @TableField(value = "delete_flag", fill = FieldFill.INSERT)
+    private Integer deleteFlag = 0;
 
     private static final long serialVersionUID = 1L;
 

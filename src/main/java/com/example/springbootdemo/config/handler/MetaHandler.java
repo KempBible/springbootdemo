@@ -2,6 +2,7 @@ package com.example.springbootdemo.config.handler;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import org.apache.ibatis.reflection.MetaObject;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
@@ -13,6 +14,7 @@ import java.util.Objects;
  * @date: 2021年03月29日 14:38
  */
 @Component
+@Configuration
 public class MetaHandler implements MetaObjectHandler {
 
     /**
@@ -28,11 +30,12 @@ public class MetaHandler implements MetaObjectHandler {
         }
 //        this.setFieldValByName("createBy", userEntity.getLoginName(), metaObject);
         boolean hasUpdateTime = metaObject.hasSetter("updateTime");
-        Object fieldValue = getFieldValByName("updateTime", metaObject);
-        if(hasUpdateTime && Objects.nonNull(fieldValue)){
+        if(hasUpdateTime){
             this.setFieldValByName("updateTime", new Date(), metaObject);
         }
 //        this.setFieldValByName("updateBy", userEntity.getLoginName(), metaObject);
+
+        this.strictInsertFill(metaObject, "version", Integer.class, 1);
     }
 
     /**

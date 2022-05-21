@@ -1,6 +1,7 @@
 package com.example.springbootdemo.config;
 
 import com.baomidou.mybatisplus.core.config.GlobalConfig;
+import com.baomidou.mybatisplus.extension.plugins.OptimisticLockerInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import com.example.springbootdemo.config.handler.MetaHandler;
 import org.springframework.context.annotation.Bean;
@@ -37,4 +38,10 @@ public class MyBatisPlusConfig {
         // paginationInterceptor.setLimit(500);
         return paginationInterceptor;
     }
+
+    @Bean
+    public OptimisticLockerInterceptor optimisticLockerInterceptor() {
+        return new OptimisticLockerInterceptor();
+    }
+
 }
