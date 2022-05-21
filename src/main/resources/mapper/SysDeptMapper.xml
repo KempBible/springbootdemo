@@ -9,5 +9,8 @@
         <result column="order_num" jdbcType="VARCHAR" property="orderNum"/>
         <result column="status" jdbcType="VARCHAR" property="status"/>
     </resultMap>
+    <select id="getSysDeptList" resultType="com.example.springbootdemo.model.SysDept">
+        select * from sys_dept
+    </select>
 
 </mapper>
