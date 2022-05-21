@@ -1,6 +1,5 @@
 package com.example.springbootdemo.controller;
 
-import com.example.springbootdemo.mapper.UserTest1Mapper;
 import com.example.springbootdemo.model.UserTest1;
 import com.example.springbootdemo.service.UserTest1Service;
 import io.swagger.annotations.ApiOperation;
