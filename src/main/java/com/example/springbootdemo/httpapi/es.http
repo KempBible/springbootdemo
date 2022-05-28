@@ -1,0 +1,1595 @@
+###公司ES：192.168.33.169:9200
+
+# curl -X GET 'http://192.168.33.169:9200/_cat/indices?v'
+GET http://192.168.33.169:9200/_cat/indices?v
+
+###
+
+# curl -X GET 'http://192.168.33.169:9200/_cat/indices?v'
+GET http://192.168.33.169:9200/_cat/indices?v
+
+
+
+###https://www.jianshu.com/p/d843873030eb
+###
+GET http://192.168.33.169:9200/tb_mobile/
+
+###
+DELETE http://192.168.33.169:9200/tb_mobile
+
+
+
+###https://www.jianshu.com/p/42b1d1f60788
+
+#查看es的分片副本情况：
+###
+GET http://192.168.33.169:9200/_cat/shards
+
+###
+GET http://192.168.33.169:9200/_cat/shards/smartcook
+
+#查看es的健康状况：
+###
+
+
+
+#创建索引
+###
+PUT http://192.168.33.169:9200/smartcook
+
+###
+GET http://192.168.33.169:9200/smartcook
+###
+DELETE http://192.168.33.169:9200/smartcook
+###
+PUT http://192.168.33.169:9200/smartcook
+{
+  "setting":{
+    "analysis":{
+      //自定义分词器
+    },
+    "index":{
+      "number_of_shards":3,
+      "number_of_replicas":1
+    }
+  },
+  "mappings":{
+    //字段名称和类型的定义
+    "properties":{
+      //字段名
+      "menu":{
+        //字段类型
+        "type":"text",
+        "index":true
+      },
+      "author":{
+        "type":"keyword",
+        "index":true
+      },
+      "food":{
+        "type":"keyword",
+        "index":false
+      },
+      "degree":{
+        "type":"integer",
+        "index":true
+      }
+    }
+  }
+}
+
+###
+#PUT http://192.168.33.169:9200/smartcook/_mapping/
+#{
+#  "dynamic": "strict"
+#}
+
+###
+PUT http://192.168.33.169:9200/smartcook/_doc/1
+content-type: application/json; charset=UTF-8
+
+{
+  "menu":"凉拌黄瓜",
+  "author":"kemp",
+  "food":"黄瓜，蒜",
+  "degree":1
+}
+
+###查询数据
+#根据id查询数据
+GET http://192.168.33.169:9200/smartcook/_doc/1
+
+###
+#查询索引下所有数据
+GET http://192.168.33.169:9200/smartcook/_search
+
+###
+#方式一：直接PUT一条相同id的数据，进行覆盖。
+PUT http://192.168.33.169:9200/smartcook/_doc/1
+content-type: application/json; charset=UTF-8
+
+{
+"degree":5
+}
+
+###
+#方式二：使用POST请求对指定的field进行update
+POST http://192.168.33.169:9200/smartcook/_doc/1
+content-type: application/json; charset=UTF-8
+
+{
+"degree":6
+}
+
+
+###
+#删除数据
+DELETE http://192.168.33.169:9200/smartcook/_doc/1
+
+
+###
+#
+POST http://192.168.33.169:9200/_analyze
+content-type: application/json; charset=UTF-8
+
+{
+  "tokenizer":"keyword",
+  "char_filter":["html_strip"],
+  "text":"<div><h1>B<sup>+</sup>Trees</h1></div>"
+}
+
+
+###
+#测试keyword分词
+GET http://192.168.33.169:9200/smartcook/_analyze
+content-type: application/json; charset=UTF-8
+
+{
+  "analyzer":"keyword", //keyword分词器将不会对文本进行分词
+  "text":"老干妈炒饭"
+}
+
+
+###
+#测试standard分词
+GET http://192.168.33.169:9200/smartcook/_analyze
+content-type: application/json; charset=UTF-8
+
+{
+  "analyzer":"standard", //standard分词器会将中文的每个字分词
+  "text":"老干妈炒饭"
+}
+
+
+###
+#测试english分词
+GET http://192.168.33.169:9200/smartcook/_analyze
+content-type: application/json; charset=UTF-8
+
+{
+  "analyzer":"english",
+  "text":"running apps in a phone"
+}
+
+
+###
+#测试ik分词器
+GET http://192.168.33.169:9200/smartcook/_analyze
+content-type: application/json; charset=UTF-8
+
+{
+  "analyzer":"ik_smart", //ik_smart分词器会对文本进行智能分词
+  "text":"老干妈炒饭"
+}
+
+
+###
+#测试ik分词器
+GET http://192.168.33.169:9200/smartcook/_analyze
+content-type: application/json; charset=UTF-8
+
+{
+  "analyzer":"ik_max_word", //ik_max_word分词器会对文本进行最细微粒的拆分
+  "text":"老干妈炒饭"
+}
+
+###
+#测试pinyin分词器
+GET http://192.168.33.169:9200/smartcook/_analyze
+content-type: application/json; charset=UTF-8
+
+{
+  "field":"name", //pinyin分词器会存储每个字的拼音和字符串的拼音首字母
+  "text":"老干妈炒饭"
+}
+
+
+###
+#简单查询
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "_source":["menu","author"],
+  "sort":[
+    {
+      "degree":{
+        "order":"desc"
+      },
+      "_score":{
+        "order":"desc"
+      }
+    }
+  ],
+  "from": 0,
+  "size": 2,
+  "profile": true,
+  "explain": true
+}
+
+
+
+###
+#简单查询
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+
+
+###
+PUT http://192.168.33.169:9200/smartcook
+###
+GET http://192.168.33.169:9200/smartcook
+###
+DELETE http://192.168.33.169:9200/smartcook
+###
+PUT http://192.168.33.169:9200/smartcook
+{
+  "setting":{
+    "analysis":{
+      //自定义分词器
+    },
+    "index":{
+      "number_of_shards":3,
+      "number_of_replicas":1
+    }
+  },
+  "mappings":{
+    //字段名称和类型的定义
+    "properties":{
+      //字段名
+      "menu":{
+        //字段类型
+        "type":"text",
+        "index":true
+      },
+      "author":{
+        "type":"keyword",
+        "index":true
+      },
+      "food":{
+        "type":"keyword",
+        "index":false
+      },
+      "degree":{
+        "type":"integer",
+        "index":true
+      }
+    }
+  }
+}
+
+###
+#PUT http://192.168.33.169:9200/smartcook/_mapping/
+#{
+#  "dynamic": "strict"
+#}
+
+###
+PUT http://192.168.33.169:9200/smartcook/_doc/2
+content-type: application/json; charset=UTF-8
+
+{
+  "menu":"西红柿鸡蛋",
+  "author":"CJ",
+  "food":"西红柿，鸡蛋",
+  "degree":3
+}
+
+###查询数据
+#根据id查询数据
+GET http://192.168.33.169:9200/smartcook/_doc/1
+
+###
+#查询索引下所有数据
+GET http://192.168.33.169:9200/smartcook/_search
+
+###
+#方式一：直接PUT一条相同id的数据，进行覆盖。
+PUT http://192.168.33.169:9200/smartcook/_doc/1
+content-type: application/json; charset=UTF-8
+
+{
+  "degree":5
+}
+
+###
+#方式二：使用POST请求对指定的field进行update
+POST http://192.168.33.169:9200/smartcook/_doc/1
+content-type: application/json; charset=UTF-8
+
+{
+  "degree":6
+}
+
+
+###
+#删除数据
+DELETE http://192.168.33.169:9200/smartcook/_doc/1
+
+
+###
+#
+POST http://192.168.33.169:9200/_analyze
+content-type: application/json; charset=UTF-8
+
+{
+  "tokenizer":"keyword",
+  "char_filter":["html_strip"],
+  "text":"<div><h1>B<sup>+</sup>Trees</h1></div>"
+}
+
+
+###
+#测试keyword分词
+GET http://192.168.33.169:9200/smartcook/_analyze
+content-type: application/json; charset=UTF-8
+
+{
+  "analyzer":"keyword", //keyword分词器将不会对文本进行分词
+  "text":"老干妈炒饭"
+}
+
+
+###
+#测试standard分词
+GET http://192.168.33.169:9200/smartcook/_analyze
+content-type: application/json; charset=UTF-8
+
+{
+  "analyzer":"standard", //standard分词器会将中文的每个字分词
+  "text":"老干妈炒饭"
+}
+
+
+###
+#测试english分词
+GET http://192.168.33.169:9200/smartcook/_analyze
+content-type: application/json; charset=UTF-8
+
+{
+  "analyzer":"english",
+  "text":"running apps in a phone"
+}
+
+
+###
+#测试ik分词器
+GET http://192.168.33.169:9200/smartcook/_analyze
+content-type: application/json; charset=UTF-8
+
+{
+  "analyzer":"ik_smart", //ik_smart分词器会对文本进行智能分词
+  "text":"老干妈炒饭"
+}
+
+
+###
+#测试ik分词器
+GET http://192.168.33.169:9200/smartcook/_analyze
+content-type: application/json; charset=UTF-8
+
+{
+  "analyzer":"ik_max_word", //ik_max_word分词器会对文本进行最细微粒的拆分
+  "text":"老干妈炒饭"
+}
+
+###
+#测试pinyin分词器
+GET http://192.168.33.169:9200/smartcook/_analyze
+content-type: application/json; charset=UTF-8
+
+{
+  "field":"name", //pinyin分词器会存储每个字的拼音和字符串的拼音首字母
+  "text":"老干妈炒饭"
+}
+
+
+###
+#简单查询
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "_source":["menu","author"],
+  "sort":[
+    {
+      "degree":{
+        "order":"desc"
+      },
+      "_score":{
+        "order":"desc"
+      }
+    }
+  ],
+  "from": 0,
+  "size": 2,
+  "profile": true,
+  "explain": true
+}
+
+
+
+###
+#简单查询
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "highlight":{
+    "pre_taps":["<p class='key' style='color:red'>"],
+    "post_tags":["</p>"],
+    "fields":{
+      "menu":{}
+    }
+  }
+}
+
+
+###
+#简单查询
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "query":{
+    "term":{
+      "name":"CJ"
+    }
+  }
+}
+
+
+###
+#简单查询
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "query":{
+    "term":{
+      "menu":{
+        "value": "凉拌黄瓜"
+      }
+    }
+  }
+}
+
+
+###
+#简单查询
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "query":{
+    "terms":{
+      "menu":["鸡", "蛋"]
+    }
+  }
+}
+
+
+###
+#简单查询
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "query":{
+    "match_all":{
+    }
+  },
+  "_source":["menu","author"],
+  "sort":[
+    {
+      "degree":{
+        "order":"desc"
+      }
+    }
+  ],
+  "from":0,
+  "size":10
+}
+
+
+###
+#单条件分词查询（match）
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "query":{
+    "match":{
+      "menu":"西红柿鸡蛋"
+    }
+  },
+  "profile":true,
+  "explain":true,
+  "highlight":{
+    "pre_tags":["<p class='key', style='color:red'>"],
+    "post_tags":["</p>"],
+    "fields":{
+       "menu":{}
+    }
+  }
+}
+
+
+###
+#多条件分词查询（match）
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "query":{
+    "bool":{
+      "must":[
+        {
+          "match":{
+            "menu":"西红柿"
+          }
+        },
+        {
+          "match":{
+            "author":"CJ"
+          }
+        }
+      ],
+      "should":[],
+      "must_not":[],
+      "filter":{
+        "range":{
+          "degree":{
+            "gt":1,
+            "lt":5
+          }
+        }
+      }
+    }
+  }
+}
+
+
+###
+#查询match（分词查询）
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "query":{
+    "match":{
+      "menu":{
+        "query":"西红柿 蛋",
+        "operator":"and"
+      }
+    }
+  }
+}
+
+
+
+###
+#查询match_phrase（短语查询）
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "query":{
+    "match_phrase":{
+      "menu":{
+        "query":"西 蛋",
+        "slop":3 //表示短语中的单词相对位置允许有3个位置的偏差
+      }
+    }
+  }
+}
+
+
+###
+#multi_query（短语查询）
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "query":{
+    "multi_match":{
+      "query":"CJ",
+      "fields":["menu","author"]
+    }
+  }
+}
+
+
+
+###
+#查询query_string（单或多字段查询）
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "query":{
+    "query_string":{
+      "fields":["menu","author"],
+      "query":"ZS OR (西红柿 AND 鸡蛋)"
+    }
+  }
+}
+
+
+
+
+###
+#范围查询range
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "query":{
+    "range":{
+      "degree":{
+        "gte":3,
+        "lte":4
+      }
+    }
+  }
+}
+
+
+###
+#match_phrase_prefix查询 （推荐搜索，最后一个单词会匹配大量的文档，效率不高）
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "query":{
+    "match_phrase_prefix":{
+      "title":{
+        "query":"西",
+        "analyzer":"standard",
+        "max_expansions":1,
+        "slop":5,
+        "boost":100
+      }
+    }
+  }
+}
+
+
+
+###
+#聚合查询
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "aggs":{ //聚合操作
+    "degree_count":{ //名称，随意其名
+      "terms":{ //分组统计
+        "field":"degree" //分组字段
+      }
+    }
+  },
+  "size":0
+}
+
+
+
+###
+#得到聚合字段的平均值
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "aggs":{ //聚合操作
+    "degree_avg":{ //名称，随意其名
+      "avg":{ //平均值
+        "field":"degree" //分组字段
+      }
+    }
+  }
+}
+
+
+###
+#得到聚合字段的最大值。
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "aggs":{
+    "degree_max":{
+      "max":{
+        "field":"degree"
+      }
+    }
+  },
+  "size":0
+}
+
+
+###
+#得到聚合字段的最小值。
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "aggs":{
+    "degree_min":{
+      "min":{
+        "field":"degree"
+      }
+    }
+  },
+  "size":0
+}
+
+
+###
+#得到聚合字段的求和。
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "aggs":{
+    "degree_sum":{
+      "sum":{
+        "field":"degree"
+      }
+    }
+  },
+  "size":0
+}
+
+
+###
+#对某个字段的值进行去重之后再取总数
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "aggs":{
+    "degree_distinct":{
+      "cardinality":{
+        "field":"degree"
+      }
+    }
+  },
+  "size":0
+}
+
+
+###
+#State聚合，对某个字段一次性返回count,max,min,avg和sum五个指标
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "aggs":{
+    "degree_stats":{
+      "stats":{
+        "field":"degree"
+      }
+    }
+  },
+  "size":0
+}
+
+
+###
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "from": 1,
+  "size": 20,
+  "query": {
+    "bool": {
+      "term": {
+        "degree": {
+          "value": 3
+        }
+      }
+    }
+  }
+}
+
+
+###
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "query":{
+    "exists":{
+      "field":"author"
+    }
+  }
+}
+
+
+###
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "query":{
+    "term":{
+      "degree":{
+        "value":"1"
+      }
+    }
+  }
+}
+
+
+###
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "query":{
+    "term":{
+      "degree":{
+        "value":1
+      }
+    }
+  }
+}
+
+
+###
+#简单查询
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "query":{
+    "term":{
+      "author":{
+        "value":"CJ"
+      }
+    }
+  }
+}
+
+###
+#桶聚合查询
+#桶聚和相当于 sql 中的 group by 语句
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "aggs":{
+    "age_groupby":{
+      "terms":{
+        "field":"degree"
+      }
+    }
+  },
+  "size":0
+}
+
+
+###
+#fuzzy实现模糊查询
+#返回包含与搜索字词相似的字词的文档
+GET http://192.168.33.169:9200/smartcook/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "query":{
+    "fuzzy":{
+      "author":{
+        "value":"C",
+        "fuzziness":2
+      }
+    }
+  }
+}
+
+
+###https://www.ruanyifeng.com/blog/2017/08/elasticsearch.html
+#全文搜索引擎 Elasticsearch 入门教程
+###2.2 Index
+#下面的命令可以查看当前节点的所有 Index。
+GET http://192.168.33.169:9200/_cat/indices?v
+
+###2.4 Type
+# 下面的命令可以列出每个 Index 所包含的 Type。
+GET http://192.168.33.169:9200/_mapping?pretty=true
+
+###三、新建和删除 Index
+#新建 Index，可以直接向 Elastic 服务器发出 PUT 请求。下面的例子是新建一个名叫weather的 Index。
+PUT http://192.168.33.169:9200/weather
+
+###查看索引
+GET http://192.168.33.169:9200/weather
+
+###然后，我们发出 DELETE 请求，删除这个 Index。
+DELETE http://192.168.33.169:9200/weather
+
+
+###新建一个 Index，指定需要分词的字段。这一步根据数据结构而异，下面的命令只针对本文
+PUT http://192.168.33.169:9200/accounts
+
+###建立索引结构
+PUT http://192.168.33.169:9200/accounts/_mapping
+content-type: application/json; charset=UTF-8
+
+{
+  "properties":{
+    "user":{
+      "type":"text",
+      "analyzer":"ik_max_word",
+      "search_analyzer":"ik_max_word"
+    },
+    "title":{
+      "type":"text",
+      "analyzer":"ik_max_word",
+      "search_analyzer":"ik_max_word"
+    },
+    "desc":{
+      "type":"text",
+      "analyzer":"ik_max_word",
+      "search_analyzer":"ik_max_word"
+    }
+  }
+}
+
+###删除索引
+DELETE http://192.168.33.169:9200/accounts
+
+###
+###注意mappings和_mapping的区别
+PUT http://192.168.33.169:9200/accounts
+content-type: application/json; charset=UTF-8
+
+{
+  "mappings":{
+    "properties":{
+      "user":{
+        "type":"text",
+        "analyzer":"ik_max_word",
+        "search_analyzer":"ik_max_word"
+      },
+      "title":{
+        "type":"text",
+        "analyzer":"ik_max_word",
+        "search_analyzer":"ik_max_word"
+      },
+      "desc":{
+        "type":"text",
+        "analyzer":"ik_max_word",
+        "search_analyzer":"ik_max_word"
+      }
+    }
+  }
+}
+
+
+
+###查看索引
+GET http://192.168.33.169:9200/accounts
+
+
+###删除索引
+DELETE http://192.168.33.169:9200/accounts
+
+
+###
+POST http://192.168.33.169:9200/_analyze
+content-type: application/json; charset=UTF-8
+
+{
+  "analyzer": "ik_max_word",
+  "text": "我爱你的我的祖国"
+}
+
+###
+POST http://192.168.33.169:9200/_analyze
+content-type: application/json; charset=UTF-8
+
+{
+  "analyzer": "ik_smart",
+  "text": "我爱你的我的祖国"
+}
+
+###5.1 新增记录
+#可以多次插入，而且是每次更新
+POST http://192.168.33.169:9200/accounts/_doc/1
+content-type: application/json; charset=UTF-8
+
+{
+  "user":"小玲羔",
+  "title":"工程师",
+  "desc":"数据库管理1"
+}
+
+###
+#只能插入一次，第一次报错（[2]: version conflict, document already exists (current version [3])）
+POST http://192.168.33.169:9200/accounts/_create/3
+content-type: application/json; charset=UTF-8
+
+{
+  "user":"玲羔",
+  "title":"工程师",
+  "desc":"数据库管理,软件开发"
+}
+
+###
+#新增记录的时候，也可以不指定 Id，这时要改成 POST 请求。
+POST http://192.168.33.169:9200/accounts/_doc
+content-type: application/json; charset=UTF-8
+
+{
+  "user":"李四",
+  "title":"工程师",
+  "desc":"系统管理"
+}
+
+
+###不推荐，不推荐，不推荐，结构乱了
+###直接创建index和doc,
+#注意，如果没有先创建 Index（这个例子是accounts），直接执行上面的命令，Elastic 也不会报错，而是直接生成指定的 Index。所以，打字的时候要小心，不要写错 Index 的名称。
+POST http://192.168.33.169:9200/accounts/_doc
+content-type: application/json; charset=UTF-8
+
+{
+"doc": {
+"user":"小玲羔",
+"title":"工程师",
+"desc":"数据库管理"
+}
+}
+
+
+###
+#5.2 查看记录
+#向/Index/Type/Id发出 GET 请求，就可以查看这条记录。
+GET http://192.168.33.169:9200/accounts/_doc/1?pretty=true
+
+###查询的是_source
+GET http://192.168.33.169:9200/accounts/_source/1?pretty=true
+
+###
+GET http://192.168.33.169:9200/accounts/_doc/1
+
+###返回的数据中，found字段表示查询成功，_source字段返回原始记录。
+GET http://192.168.33.169:9200/accounts/_source/1
+
+###5.3 删除记录
+#删除记录就是发出 DELETE 请求。
+DELETE http://192.168.33.169:9200/accounts/_doc/Rvs59YABdfWCfQCVKY2b
+
+
+###5.4 更新记录
+#更新记录就是使用 POST 请求，重新发送一次数据。
+POST http://192.168.33.169:9200/accounts/_update/1
+content-type: application/json; charset=UTF-8
+
+{
+  "doc": {
+    "user":"小玲羔",
+    "title":"工程师",
+    "desc":"数据库管理"
+  }
+}
+
+###
+#{
+#  "script" : {
+#    "source": "ctx._source.counter += params.user",
+#    "lang": "painless",
+#    "params" : {
+#      "user" : "小玲"
+#    }
+#  }
+#}
+###
+
+###更新2
+POST http://192.168.33.169:9200/accounts/_doc/1
+content-type: application/json; charset=UTF-8
+
+{
+  "user":"小玲羔2",
+  "title":"工程师2",
+  "desc":"数据库管理2"
+}
+
+
+###
+POST http://192.168.33.169:9200/accounts/_update_by_query
+content-type: application/json; charset=UTF-8
+
+{
+  "script": {
+    "source": "ctx._source.likes++",
+    "lang": "painless"
+  },
+  "query": {
+    "term": {
+      "id": "Zfsu9YABdfWCfQCVcoY0"
+    }
+  }
+}
+
+
+###六、数据查询
+#6.1 返回所有记录
+#使用 GET 方法，直接请求/Index/_search，就会返回所有记录。
+GET http://192.168.33.169:9200/accounts/_search
+
+###
+#6.2 全文搜索
+#Elastic 的查询非常特别，使用自己的查询语法，要求 GET 请求带有数据体。
+GET http://192.168.33.169:9200/accounts/_search/
+content-type: application/json; charset=UTF-8
+
+{
+  "query":{
+    "match":{
+      "desc":"软件"
+    }
+  }
+}
+###上面代码使用 Match 查询，指定的匹配条件是desc字段里面包含"软件"这个词。返回结果如下。
+
+###6.2 全文搜索
+#Elastic 默认一次返回10条结果，可以通过size字段改变这个设置。
+GET http://192.168.33.169:9200/accounts/_search/
+content-type: application/json; charset=UTF-8
+
+{
+  "query":{
+    "match":{
+      "desc":"管理"
+    }
+  },
+  "size":1
+}
+###上面代码指定，每次只返回一条结果。
+
+
+###6.2 全文搜索
+#还可以通过from字段，指定位移。
+GET http://192.168.33.169:9200/accounts/_search/
+content-type: application/json; charset=UTF-8
+
+{
+  "query":{
+    "match":{
+      "desc":"管理"
+    }
+  },
+  "from":1,
+  "size":1
+}
+###上面代码指定，从位置1开始（默认是从位置0开始），只返回一条结果。
+
+
+###
+#6.3 逻辑运算
+#如果有多个搜索关键字， Elastic 认为它们是or关系。
+GET http://192.168.33.169:9200/accounts/_search/
+content-type: application/json; charset=UTF-8
+
+{
+  "query":{
+    "match":{
+      "desc":"软件 系统"
+    }
+  }
+}
+###上面代码搜索的是软件 or 系统。
+
+
+###
+#6.3 逻辑运算
+#如果要执行多个关键词的and搜索，必须使用布尔查询。
+GET http://192.168.33.169:9200/accounts/_search/
+content-type: application/json; charset=UTF-8
+
+{
+  "query":{
+    "bool":{
+      "must":[
+        {"match":{"desc":"软件"}},
+        {"match":{"desc":"管理"}}
+      ]
+    }
+  }
+}
+
+
+###https://zhuanlan.zhihu.com/p/104215274
+#其它 API
+#查看集群的健康状态
+GET http://192.168.33.169:9200/_cluster/health
+content-type: application/json; charset=UTF-8
+
+###查看对应索引的状态
+GET http://192.168.33.169:9200/idx_qc_audio
+content-type: application/json; charset=UTF-8
+
+###查看索引的文档总数
+GET http://192.168.33.169:9200/idx_qc_audio/_count
+content-type: application/json; charset=UTF-8
+
+###使用某个分词器对文本进行分词
+POST http://192.168.33.169:9200/_analyze
+content-type: application/json; charset=UTF-8
+
+{
+  "analyzer": "standard",
+  "text": "hello world, you are right"
+}
+
+###
+POST http://192.168.33.169:9200/_analyze
+content-type: application/json; charset=UTF-8
+
+{
+"analyzer": "ik_max_word",
+"text": "hello world, you are right"
+}
+
+###
+POST http://192.168.33.169:9200/_analyze
+content-type: application/json; charset=UTF-8
+
+{
+  "analyzer": "ik_smart",
+  "text": "hello world, you are right"
+}
+
+###创建索引
+PUT http://192.168.33.169:9200/user
+
+###查看索引
+GET http://192.168.33.169:9200/user
+
+###修改 mapping 定义
+PUT http://192.168.33.169:9200/user/_mapping
+content-type: application/json; charset=UTF-8
+
+{
+  "dynamic":"false"
+}
+
+
+###删除索引
+DELETE http://192.168.33.169:9200/user
+
+
+###查看 mapping 定义
+GET http://192.168.33.169:9200/idx_qc_audio/_mapping
+
+###https://juejin.cn/post/6844904004657348616
+###mget是批量获取的方法之一，请求的格式有两种：
+###
+#mget是批量获取的方法之一，请求的格式有两种：
+#
+#    GET /_mget
+#    GET /<index>/_mget
+#
+#第一种是在请求体中写index。第二种是把index放到url中，不过这种方式可能会触发ES的安全检查。
+###
+POST http://192.168.33.169:9200/_mget
+content-type: application/json; charset=UTF-8
+
+{
+  "docs":[
+    {
+      "_index":"idx_qc_audio",
+      "_id":20000
+    },
+    {
+      "_index":"idx_qc_audio",
+      "_id":30000
+    }
+  ]
+}
+
+###
+POST http://192.168.33.169:9200/idx_qc_audio/_mget
+content-type: application/json; charset=UTF-8
+
+{
+  "docs":[
+    {
+      "_id":20000
+    },
+    {
+      "_id":30000
+    }
+  ]
+}
+
+
+###删除文档
+DELETE http://192.168.33.169:9200/idx_qc_audio/_doc/20000
+
+
+
+###
+PUT http://192.168.33.169:9200/product
+content-type: application/json; charset=UTF-8
+
+{
+  "mappings":{
+    "_source":{
+      "includes":[
+        "name",
+        "price"
+      ],
+      "excludes":[
+        "desc",
+        "tags"
+      ]
+    }
+  }
+}
+
+###
+PUT http://192.168.33.169:9200/sms_log_index
+content-type: application/json; charset=UTF-8
+
+{
+  "mappings":{
+    "properties":{
+      "id":{
+        "type":"long"
+      },
+      "createDate":{
+        "type":"long"
+      },
+      "sendDate":{
+        "type":"long"
+      },
+      "longCode":{
+        "type":"keyword"
+      },
+      "mobile":{
+        "type":"text",
+        "analyzer":"ik_max_word",
+        "search_analyzer":"ik_max_word"
+      },
+      "corpName":{
+        "type":"text",
+        "analyzer":"ik_max_word",
+        "search_analyzer":"ik_max_word"
+      },
+      "smsContent":{
+        "type":"text",
+        "analyzer":"ik_max_word",
+        "search_analyzer":"ik_max_word"
+      },
+      "state":{
+        "type":"short"
+      },
+      "operatorId":{
+        "type":"long"
+      },
+      "province":{
+        "type":"keyword"
+      },
+      "ipAddr":{
+        "type":"text",
+        "analyzer":"ik_max_word",
+        "search_analyzer":"ik_max_word"
+      },
+      "replyTotal":{
+        "type":"long"
+      },
+      "fee":{
+        "type":"long"
+      }
+    }
+  }
+}
+
+
+###
+#https://blog.csdn.net/qwq1518346864/article/details/117716279
+GET http://192.168.33.169:9200/sms_log_index/_mapping
+
+###
+POST http://192.168.33.169:9200/sms_log_index/_doc
+content-type: application/json; charset=UTF-8
+
+{
+  "id":1,
+  "createDate":1623071230589,
+  "sendDate":1623071230589,
+  "longCode":"10660000988",
+  "mobile":"13100000000",
+  "corpName":"盒马鲜生",
+  "smsContent":"term的查询是代表完全匹配，搜索之前不会对你搜索的关键字进行分词，对你的关键字去文档分词库中去匹配内容。",
+  "state":0,
+  "operatorId":2,
+  "province":"北京",
+  "ipAddr":"10.126.2.9",
+  "replyTotal":15,
+  "fee":5
+}
+
+###
+POST http://192.168.33.169:9200/sms_log_index/_doc
+content-type: application/json; charset=UTF-8
+
+{
+  "id":1,
+  "createDate":1723071230589,
+  "sendDate":1723071230589,
+  "longCode":"10660000981",
+  "mobile":"18888888888",
+  "corpName":"拼多多",
+  "smsContent":"测试数据",
+  "state":0,
+  "operatorId":2,
+  "province":"上海",
+  "ipAddr":"10.126.2.1",
+  "replyTotal":15,
+  "fee":5
+}
+
+###
+GET http://192.168.33.169:9200/sms_log_index/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "from":0,
+  "size":5,
+  "query":{
+    "term":{
+      "province":{
+        "value":"北京"
+      }
+    }
+  }
+}
+
+
+###
+GET http://192.168.33.169:9200/sms_log_index/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "from":0,
+  "size":5,
+  "query":{
+    "terms":{
+      "province":[
+        "北京",
+        "山西",
+        "武汉"
+      ]
+    }
+  }
+}
+
+###
+PUT http://192.168.33.169:9200/icpool_sku_index_pre
+content-type: application/json; charset=UTF-8
+
+{
+  "mappings":{
+    "properties":{
+      "allowance_id":{
+        "type":"long"
+      },
+      "sku_id":{
+        "type":"long"
+      },
+      "limit_time":{
+        "type":"long"
+      }
+    }
+  }
+}
+
+###
+GET http://192.168.33.169:9200/icpool_sku_index_pre/_mapping
+
+
+###
+POST http://192.168.33.169:9200/icpool_sku_index_pre/_doc
+content-type: application/json; charset=UTF-8
+
+{
+  "id":3,
+  "allowance_id":11,
+  "sku_id":13,
+  "limit_time":1623071230589
+}
+
+###
+GET http://192.168.33.169:9200/icpool_sku_index_pre/_search
+
+###
+GET http://192.168.33.169:9200/icpool_sku_index_pre/_search
+content-type: application/json; charset=UTF-8
+
+{
+  "from":0,
+  "size":20,
+  "query":{
+    "terms":{
+      "sku_id":[12,13],
+      "boost":1.0
+    }
+  },
+  "sort":[{
+    "limit_time":{
+      "order":"desc"
+    }
+  }]
+}
+
+###
+PUT http://192.168.33.169:9200/user
+
+###
+PUT http://192.168.33.169:9200/user
+content-type: application/json; charset=UTF-8
+
+
+{
+  "user": {
+    "aliases": {
+      "user.aliases": {}
+    },
+    "mappings": {
+      "properties": {
+        "age": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword"
+            }
+          }
+        },
+        "sex": {
+          "type": "keyword"
+        }
+      }
+    },
+    "settings": {
+      "index": {
+        "creation_date": "1649243890532",
+        "number_of_shards": "9",
+        "number_of_replicas": "2",
+        "uuid": "EPChtL_vQj2gHJbO5VTHqg",
+        "version": {
+          "created": "7060099"
+        },
+        "provided_name": "user"
+      }
+    }
+  }
+}
