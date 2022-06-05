@@ -233,7 +233,7 @@
             <artifactId>jackson-annotations</artifactId>
             <version>2.11.2</version>
         </dependency>
-
+<!--        https://blog.csdn.net/AP0906424/article/details/123178530-->
         <dependency>
             <groupId>org.redisson</groupId>
             <artifactId>redisson</artifactId>

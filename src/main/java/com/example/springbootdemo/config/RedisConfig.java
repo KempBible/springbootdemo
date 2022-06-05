@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.redisson.Redisson;
+import org.redisson.api.RedissonClient;
 import org.redisson.config.Config;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
@@ -59,6 +60,22 @@ public class RedisConfig {
         Config config = new Config();
         config.useSingleServer().setAddress("redis://127.0.0.1:6379").setDatabase(0);
         return (Redisson) Redisson.create(config);
+    }
+
+    //https://blog.csdn.net/AP0906424/article/details/123178530
+    /**
+     * 所有对redisson的使用都是通过RedissonClient来操作的
+     * @return
+     */
+    @Bean(destroyMethod="shutdown")
+    public RedissonClient redissonClient(){
+        // 1. 创建配置
+        Config config = new Config();
+        // 一定要加redis://
+        config.useSingleServer().setAddress("redis://127.0.0.1:6379");
+        // 2. 根据config创建出redissonClient实例
+        RedissonClient redissonClient = Redisson.create(config);
+        return redissonClient;
     }
 }
 

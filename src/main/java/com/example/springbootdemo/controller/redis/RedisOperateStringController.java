@@ -19,7 +19,7 @@ import java.util.concurrent.TimeUnit;
  */
 @RestController
 @RequestMapping(value = "redisTemplate", produces = "application/json;charset=UTF-8")
-public class RedisOperateString {
+public class RedisOperateStringController {
 
     @Autowired
     RedisTemplate<String, Object> redisTemplate;
