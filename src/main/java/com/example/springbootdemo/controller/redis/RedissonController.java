@@ -25,7 +25,8 @@ public class RedissonController {
         // lock.lock(10, TimeUnit.SECONDS);// 10s自动解锁，自动解锁时间一定要大于业务的执行时间。
         try {
             System.out.println("加锁成功" + Thread.currentThread().getId());
-            Thread.sleep(30000);
+            Thread.sleep(3000);
+//            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
