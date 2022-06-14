@@ -38,6 +38,8 @@ public class 类型转换工具类Convert {
         //结果为Integer数组
         Integer[] intArray = Convert.toIntArray(c);
         System.out.println(Arrays.toString(intArray));
+
+        System.out.println(Convert.toCollection(List.class, String.class, b));;
     }
 
     @Test
@@ -50,7 +52,11 @@ public class 类型转换工具类Convert {
     @Test
     public void 转换为集合(){
         Object[] a = {"a", "你", "好", "1"};
-        System.out.println(Convert.toList(a));;
+
+        List<?> list = Convert.convert(List.class, a);
+        System.out.println(list);
+
+        System.out.println(Convert.toList(a));
     }
 
     @Test

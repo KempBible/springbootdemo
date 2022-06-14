@@ -17,12 +17,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f24532d7-4c3e-4fe6-9d7e-dab15c8a2538" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springbootdemo/controller/redis/jmeter/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/redis/分布式锁/基于Redis实现分布式锁的7种方案/_1_SETNXEXPIRE.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/redis/分布式锁/基于Redis实现分布式锁的7种方案/_2_SETNXValue值是系统时间过期时间.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/redis/分布式锁/基于Redis实现分布式锁的7种方案/_3_使用Lua脚本包含SETNXEXPIRE两条指令.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springbootdemo/controller/redis/jmeter/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springbootdemo/controller/redis/jmeter/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/hutool/类型转换工具类Convert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/hutool/类型转换工具类Convert.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -932,20 +928,7 @@
       <command value="mvn clean package -U" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringbootdemoApplication">
-    <configuration name="发送延时消息" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.RocketMQ.发送延时消息" />
-      <module name="springbootdemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.RocketMQ.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.类型转换工具类Convert.转换为集合">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.springbootdemo.controller.redis.jmeter.Main" />
       <module name="springbootdemo" />
@@ -985,32 +968,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_1_SETNXEXPIRE" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.redis.分布式锁.基于Redis实现分布式锁的7种方案._1_SETNXEXPIRE" />
-      <module name="springbootdemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.redis.分布式锁.基于Redis实现分布式锁的7种方案.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_2_SETNXValue值是系统时间过期时间" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.redis.分布式锁.基于Redis实现分布式锁的7种方案._2_SETNXValue值是系统时间过期时间" />
-      <module name="springbootdemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.redis.分布式锁.基于Redis实现分布式锁的7种方案.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="_3_使用Lua脚本包含SETNXEXPIRE两条指令" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.redis.分布式锁.基于Redis实现分布式锁的7种方案._3_使用Lua脚本包含SETNXEXPIRE两条指令" />
       <module name="springbootdemo" />
@@ -1027,6 +984,38 @@
     <configuration name="generated-requests#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" runType="Run single request">
       <method v="2" />
     </configuration>
+    <configuration name="类型转换工具类Convert.转换为指定类型数组" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springbootdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.hutool.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.hutool" />
+      <option name="MAIN_CLASS_NAME" value="test.hutool.类型转换工具类Convert" />
+      <option name="METHOD_NAME" value="转换为指定类型数组" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="类型转换工具类Convert.转换为集合" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springbootdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.hutool.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.hutool" />
+      <option name="MAIN_CLASS_NAME" value="test.hutool.类型转换工具类Convert" />
+      <option name="METHOD_NAME" value="转换为集合" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringbootdemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="springbootdemo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.springbootdemo.SpringbootdemoApplication" />
@@ -1038,21 +1027,20 @@
     </configuration>
     <list>
       <item itemvalue="Application.别瞎写工具类了Spring自带的不香吗" />
-      <item itemvalue="Application.发送延时消息" />
-      <item itemvalue="Application._1_SETNXEXPIRE" />
-      <item itemvalue="Application._2_SETNXValue值是系统时间过期时间" />
       <item itemvalue="Application._3_使用Lua脚本包含SETNXEXPIRE两条指令" />
       <item itemvalue="Application.Main" />
       <item itemvalue="HTTP Request.generated-requests#1" />
       <item itemvalue="Spring Boot.SpringbootdemoApplication" />
+      <item itemvalue="JUnit.类型转换工具类Convert.转换为指定类型数组" />
+      <item itemvalue="JUnit.类型转换工具类Convert.转换为集合" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.类型转换工具类Convert.转换为集合" />
+        <item itemvalue="JUnit.类型转换工具类Convert.转换为指定类型数组" />
         <item itemvalue="Application.Main" />
         <item itemvalue="HTTP Request.generated-requests#1" />
         <item itemvalue="Application._3_使用Lua脚本包含SETNXEXPIRE两条指令" />
-        <item itemvalue="Application._2_SETNXValue值是系统时间过期时间" />
-        <item itemvalue="Application._1_SETNXEXPIRE" />
       </list>
     </recent_temporary>
   </component>
@@ -1163,7 +1151,7 @@
       <workItem from="1654762148453" duration="747000" />
       <workItem from="1654762951087" duration="4697000" />
       <workItem from="1655007138716" duration="11885000" />
-      <workItem from="1655209146910" duration="536000" />
+      <workItem from="1655209146910" duration="905000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1650695268153</created>
@@ -1347,7 +1335,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654876389992</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="自主学习">
+      <created>1655221554691</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1655221554692</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1403,7 +1398,6 @@
     <state x="2180" y="366" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1652526302027">
       <screen x="1512" y="25" width="1920" height="1055" />
     </state>
-    <state x="-1847" y="359" key="#com.intellij.fileTypes.FileTypeChooser/-2560.0.2048.1112/0.0.2048.1112@-2560.0.2048.1112" timestamp="1646383382738" />
     <state x="713" y="359" key="#com.intellij.fileTypes.FileTypeChooser/-2560.0.2048.1112/0.0.2048.1112@0.0.2048.1112" timestamp="1647073608726" />
     <state x="2180" y="366" key="#com.intellij.fileTypes.FileTypeChooser/0.38.1512.872/1512.25.1920.1055@1512.25.1920.1055" timestamp="1652526302027" />
     <state x="394" y="218" key="#com.intellij.ide.util.ExportDialog" timestamp="1650358797426">
@@ -1413,7 +1407,6 @@
     <state x="613" y="242" key="#com.intellij.ide.util.MemberChooser" timestamp="1653749303215">
       <screen x="0" y="38" width="1512" height="882" />
     </state>
-    <state x="-1730" y="258" key="#com.intellij.ide.util.MemberChooser/-2560.0.2048.1112/0.0.2048.1112@-2560.0.2048.1112" timestamp="1646375563225" />
     <state x="830" y="258" key="#com.intellij.ide.util.MemberChooser/-2560.0.2048.1112/0.0.2048.1112@0.0.2048.1112" timestamp="1647084466179" />
     <state x="613" y="241" key="#com.intellij.ide.util.MemberChooser/0.38.1512.874/1512.25.1920.1055@0.38.1512.874" timestamp="1651562681581" />
     <state x="613" y="241" key="#com.intellij.ide.util.MemberChooser/0.38.1512.876/1512.25.1920.1055@0.38.1512.876" timestamp="1650772097350" />
@@ -1482,12 +1475,13 @@
       <screen x="0" y="38" width="1512" height="877" />
     </state>
     <state x="515" y="340" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.38.1512.877/1512.25.1920.1055@0.38.1512.877" timestamp="1650355954666" />
-    <state x="0" y="38" width="1512" height="877" key="CommitChangelistDialog2" timestamp="1654876389202">
-      <screen x="0" y="38" width="1512" height="890" />
+    <state x="0" y="38" width="1512" height="877" key="CommitChangelistDialog2" timestamp="1655221553851">
+      <screen x="0" y="38" width="1512" height="872" />
     </state>
     <state x="0" y="82" key="CommitChangelistDialog2/0.32.1512.950/1512.25.1920.1055@0.32.1512.950" timestamp="1650696097427" />
     <state x="264" y="92" key="CommitChangelistDialog2/0.38.1512.872/1512.25.1920.1055@0.38.1512.872" timestamp="1652526854897" />
     <state x="1847" y="94" width="1210" height="986" key="CommitChangelistDialog2/0.38.1512.872/1512.25.1920.1055@1512.25.1920.1055" timestamp="1652526726702" />
+    <state x="0" y="38" key="CommitChangelistDialog2/0.38.1512.872@0.38.1512.872" timestamp="1655221553851" />
     <state x="0" y="38" width="1512" height="877" key="CommitChangelistDialog2/0.38.1512.877/1512.25.1920.1055@0.38.1512.877" timestamp="1653188664754" />
     <state x="0" y="38" key="CommitChangelistDialog2/0.38.1512.879/1512.25.1920.1055@0.38.1512.879" timestamp="1653820819430" />
     <state x="1847" y="25" width="1537" height="1055" key="CommitChangelistDialog2/0.38.1512.879/1512.25.1920.1055@1512.25.1920.1055" timestamp="1652972590250" />
@@ -1977,10 +1971,11 @@
     <state width="500" height="436" key="SwitcherDM/0.38.1512.879/1512.25.1920.1055@0.38.1512.879" timestamp="1650376309108" />
     <state width="635" height="524" key="SwitcherDM/0.38.1512.885/1512.25.1920.1055@1512.25.1920.1055" timestamp="1653404516604" />
     <state width="500" height="445" key="SwitcherDM/0.38.1512.887/1512.25.1920.1055@1512.25.1920.1055" timestamp="1648018181882" />
-    <state x="356" y="212" key="Vcs.Push.Dialog.v2" timestamp="1654876400190">
-      <screen x="0" y="38" width="1512" height="890" />
+    <state x="356" y="208" key="Vcs.Push.Dialog.v2" timestamp="1655221561111">
+      <screen x="0" y="38" width="1512" height="872" />
     </state>
     <state x="356" y="219" key="Vcs.Push.Dialog.v2/0.32.1512.950/1512.25.1920.1055@0.32.1512.950" timestamp="1650696150241" />
+    <state x="356" y="208" key="Vcs.Push.Dialog.v2/0.38.1512.872@0.38.1512.872" timestamp="1655221561111" />
     <state x="356" y="210" key="Vcs.Push.Dialog.v2/0.38.1512.874/1512.25.1920.1055@0.38.1512.874" timestamp="1650723723956" />
     <state x="356" y="210" key="Vcs.Push.Dialog.v2/0.38.1512.876/1512.25.1920.1055@0.38.1512.876" timestamp="1650696712390" />
     <state x="356" y="210" key="Vcs.Push.Dialog.v2/0.38.1512.877/1512.25.1920.1055@0.38.1512.877" timestamp="1653188674225" />
@@ -2005,7 +2000,6 @@
     <state x="540" y="185" width="760" height="665" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1655027591346">
       <screen x="0" y="38" width="1512" height="885" />
     </state>
-    <state x="-2030" y="293" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/-2560.0.2048.1112/0.0.2048.1112@-2560.0.2048.1112" timestamp="1646375844146" />
     <state x="530" y="293" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/-2560.0.2048.1112/0.0.2048.1112@0.0.2048.1112" timestamp="1647064620315" />
     <state x="391" y="267" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.38.1512.872/1512.25.1920.1055@0.38.1512.872" timestamp="1652527080401" />
     <state x="391" y="268" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.38.1512.874/1512.25.1920.1055@0.38.1512.874" timestamp="1653790771809" />
