@@ -87,7 +87,6 @@ public class IndexController {
 
     @PostMapping("/buy4")
     public String buy4() {
-
         for (int i = 0; i < 100; i++) {
             new Thread(new Runnable() {
                 @Override
@@ -167,7 +166,7 @@ public class IndexController {
 
     @PostMapping("/buy6")
     public String buy6() {
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 1000; i++) {
             new Thread(new Runnable() {
                 @Override
                 public void run() {
@@ -180,7 +179,6 @@ public class IndexController {
                         // 加锁失败
                         if (!flag) {
                             System.out.println("抢锁失败！");
-                            ;
                         }
                         System.out.println(value + " 抢锁成功");
                         String result = template.opsForValue().get("goods:001");
