@@ -119,6 +119,7 @@ public class 类型转换工具类Convert {
         System.out.println(result);
 
         String raw = Convert.convertCharset(result, CharsetUtil.ISO_8859_1, CharsetUtil.UTF_8);
+        //我不是乱码
         System.out.println(raw);
     }
 
@@ -147,18 +148,22 @@ public class 类型转换工具类Convert {
 
         //数字简化
         String numberToSimple = Convert.numberToSimple(123.45);
+        //123
         System.out.println(numberToSimple);
 
-        //壹佰贰拾叁点肆伍
         String numberToChinese = Convert.numberToChinese(123.45, true);
+        //壹佰贰拾叁点肆伍
         System.out.println(numberToChinese);
 
-        //数字转中文
+
         String numberToChineseFalse = Convert.numberToChinese(123.45, false);
+        //数字转中文
+        //一百二十三点四五
         System.out.println(numberToChineseFalse);
 
-        //数字中文表示转换为数字
         int f1 = Convert.chineseToNumber("壹佰贰拾叁");
+        //数字中文表示转换为数字
+        //123
         System.out.println(f1);
     }
 
@@ -167,15 +172,15 @@ public class 类型转换工具类Convert {
         //去包装
         Class<?> wrapClass = Integer.class;
 
-        //结果为：int.class
         Class<?> unWraped = Convert.unWrap(wrapClass);
+        //结果为：int
         System.out.println(unWraped);
 
         //包装
         Class<?> primitiveClass = long.class;
 
-        //结果为：Long.class
         Class<?> wraped = Convert.wrap(primitiveClass);
+        //结果为：class java.lang.Long
         System.out.println(wraped);
     }
 }
