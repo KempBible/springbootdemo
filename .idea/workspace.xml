@@ -17,23 +17,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f24532d7-4c3e-4fe6-9d7e-dab15c8a2538" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/hutool/IO流相关/ClassPath资源访问ClassPathResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/hutool/IO流相关/IO工具类IoUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/hutool/IO流相关/example.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/hutool/IO流相关/test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/hutool/IO流相关/test.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/hutool/IO流相关/文件名工具FileNameUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/hutool/IO流相关/文件监听WatchMonitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/hutool/IO流相关/文件类型判断FileTypeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/hutool/IO流相关/文件读取FileReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/hutool/IO流相关/文件跟随Tailer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/hutool/IO流相关/文件追加FileAppender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/hutool/IO流相关/资源工具ResourceUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/hutool/LocalDateTime工具LocalDateTimeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/hutool/农历日期ChineseDate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/hutool/计时器工具TimeInterval.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/hutool/工具类/字符串工具StrUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/hutool/日期时间对象DateTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/hutool/日期时间对象DateTime.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -944,7 +929,7 @@
       <command value="mvn clean package -U" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.别瞎写工具类了Spring自带的不香吗">
+  <component name="RunManager" selected="JUnit.字符串工具StrUtil.format方法">
     <configuration name="别瞎写工具类了Spring自带的不香吗" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.java方法工具.spring包方法.别瞎写工具类了Spring自带的不香吗" />
       <module name="springbootdemo" />
@@ -990,54 +975,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="文件名工具FileNameUtil.获取主文件名和扩展名" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springbootdemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.hutool.IO流相关.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.hutool.IO流相关" />
-      <option name="MAIN_CLASS_NAME" value="test.hutool.IO流相关.文件名工具FileNameUtil" />
-      <option name="METHOD_NAME" value="获取主文件名和扩展名" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LocalDateTime工具LocalDateTimeUtil.计算时间间隔" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springbootdemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.hutool.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.hutool" />
-      <option name="MAIN_CLASS_NAME" value="test.hutool.LocalDateTime工具LocalDateTimeUtil" />
-      <option name="METHOD_NAME" value="计算时间间隔" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="资源工具ResourceUtil.使用" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springbootdemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.hutool.IO流相关.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.hutool.IO流相关" />
-      <option name="MAIN_CLASS_NAME" value="test.hutool.IO流相关.资源工具ResourceUtil" />
-      <option name="METHOD_NAME" value="使用" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="资源工具ResourceUtil.假设我们的文件存放在src_resources_config目录下则读取改为" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springbootdemo" />
       <extension name="coverage">
@@ -1054,17 +991,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="计时器工具TimeInterval.也可以实现分组计时" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="字符串工具StrUtil.format方法" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springbootdemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.hutool.*" />
+          <option name="PATTERN" value="test.hutool.工具类.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test.hutool" />
-      <option name="MAIN_CLASS_NAME" value="test.hutool.计时器工具TimeInterval" />
-      <option name="METHOD_NAME" value="也可以实现分组计时" />
+      <option name="PACKAGE_NAME" value="test.hutool.工具类" />
+      <option name="MAIN_CLASS_NAME" value="test.hutool.工具类.字符串工具StrUtil" />
+      <option name="METHOD_NAME" value="format方法" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="字符串工具StrUtil.removePrefixRemoveSuffix方法" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springbootdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.hutool.工具类.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.hutool.工具类" />
+      <option name="MAIN_CLASS_NAME" value="test.hutool.工具类.字符串工具StrUtil" />
+      <option name="METHOD_NAME" value="removePrefixRemoveSuffix方法" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="字符串工具StrUtil.sub方法" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springbootdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.hutool.工具类.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.hutool.工具类" />
+      <option name="MAIN_CLASS_NAME" value="test.hutool.工具类.字符串工具StrUtil" />
+      <option name="METHOD_NAME" value="sub方法" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -1081,20 +1050,20 @@
     </configuration>
     <list>
       <item itemvalue="Application.别瞎写工具类了Spring自带的不香吗" />
-      <item itemvalue="JUnit.LocalDateTime工具LocalDateTimeUtil.计算时间间隔" />
-      <item itemvalue="JUnit.计时器工具TimeInterval.也可以实现分组计时" />
-      <item itemvalue="JUnit.文件名工具FileNameUtil.获取主文件名和扩展名" />
-      <item itemvalue="JUnit.资源工具ResourceUtil.使用" />
       <item itemvalue="JUnit.资源工具ResourceUtil.假设我们的文件存放在src_resources_config目录下则读取改为" />
       <item itemvalue="JUnit.ClassPath资源访问ClassPathResource.由来" />
       <item itemvalue="Spring Boot.SpringbootdemoApplication" />
+      <item itemvalue="JUnit.字符串工具StrUtil.removePrefixRemoveSuffix方法" />
+      <item itemvalue="JUnit.字符串工具StrUtil.sub方法" />
+      <item itemvalue="JUnit.字符串工具StrUtil.format方法" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.字符串工具StrUtil.format方法" />
+        <item itemvalue="JUnit.字符串工具StrUtil.sub方法" />
+        <item itemvalue="JUnit.字符串工具StrUtil.removePrefixRemoveSuffix方法" />
         <item itemvalue="JUnit.ClassPath资源访问ClassPathResource.由来" />
         <item itemvalue="JUnit.资源工具ResourceUtil.假设我们的文件存放在src_resources_config目录下则读取改为" />
-        <item itemvalue="JUnit.资源工具ResourceUtil.使用" />
-        <item itemvalue="JUnit.文件名工具FileNameUtil.获取主文件名和扩展名" />
       </list>
     </recent_temporary>
   </component>
@@ -1207,6 +1176,7 @@
       <workItem from="1655007138716" duration="11885000" />
       <workItem from="1655209146910" duration="20235000" />
       <workItem from="1655567142789" duration="6372000" />
+      <workItem from="1655652061710" duration="3720000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1650695268153</created>
@@ -1411,7 +1381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655542696041</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="自主学习">
+      <created>1655652114515</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1655652114517</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1536,10 +1513,11 @@
       <screen x="0" y="38" width="1512" height="877" />
     </state>
     <state x="515" y="340" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.38.1512.877/1512.25.1920.1055@0.38.1512.877" timestamp="1650355954666" />
-    <state x="0" y="38" width="1512" height="944" key="CommitChangelistDialog2" timestamp="1655542694633">
-      <screen x="0" y="38" width="1512" height="944" />
+    <state x="0" y="38" width="1512" height="944" key="CommitChangelistDialog2" timestamp="1655652112438">
+      <screen x="0" y="38" width="1512" height="870" />
     </state>
     <state x="0" y="82" key="CommitChangelistDialog2/0.32.1512.950/1512.25.1920.1055@0.32.1512.950" timestamp="1650696097427" />
+    <state x="0" y="38" key="CommitChangelistDialog2/0.38.1512.870/1512.25.1920.1055@0.38.1512.870" timestamp="1655652112438" />
     <state x="264" y="92" key="CommitChangelistDialog2/0.38.1512.872/1512.25.1920.1055@0.38.1512.872" timestamp="1652526854897" />
     <state x="1847" y="94" width="1210" height="986" key="CommitChangelistDialog2/0.38.1512.872/1512.25.1920.1055@1512.25.1920.1055" timestamp="1652526726702" />
     <state x="0" y="38" key="CommitChangelistDialog2/0.38.1512.872@0.38.1512.872" timestamp="1655221908829" />
@@ -1573,10 +1551,6 @@
     <state x="100" y="140" key="DiffContextDialog/0.38.1512.889/1512.25.1920.1055@0.38.1512.889" timestamp="1650813088827" />
     <state x="100" y="140" key="DiffContextDialog/0.38.1512.890@0.38.1512.890" timestamp="1654876381751" />
     <state x="100" y="146" key="DiffContextDialog/0.38.1512.944/1512.25.1920.970@0.38.1512.944" timestamp="1655542680938" />
-    <state x="805" y="312" key="FileChooserDialogImpl" timestamp="1647005126460">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="805" y="312" key="FileChooserDialogImpl/-2560.0.2048.1112/0.0.2048.1112@0.0.2048.1112" timestamp="1647005126460" />
     <state x="565" y="396" key="Github.CreateGistDialog" timestamp="1650640375052">
       <screen x="0" y="38" width="1512" height="874" />
     </state>
@@ -1586,12 +1560,12 @@
     </state>
     <state x="870" y="365" key="Github.ShareDialog/0.38.1512.872/1512.25.1920.1055@0.38.1512.872" timestamp="1650697453591" />
     <state x="606" y="374" key="Github.ShareDialog/0.38.1512.876/1512.25.1920.1055@0.38.1512.876" timestamp="1650686402861" />
-    <state width="1470" height="357" key="GridCell.Tab.0.bottom" timestamp="1655626655839">
-      <screen x="0" y="38" width="1512" height="872" />
+    <state width="1470" height="248" key="GridCell.Tab.0.bottom" timestamp="1655653209920">
+      <screen x="0" y="38" width="1512" height="870" />
     </state>
     <state width="2005" height="316" key="GridCell.Tab.0.bottom/-2560.0.2048.1112/0.0.2048.1112@0.0.2048.1112" timestamp="1647086955289" />
     <state width="1470" height="248" key="GridCell.Tab.0.bottom/0.38.1512.868/1512.25.1920.1055@0.38.1512.868" timestamp="1655567777082" />
-    <state width="1470" height="248" key="GridCell.Tab.0.bottom/0.38.1512.870/1512.25.1920.1055@0.38.1512.870" timestamp="1655607245231" />
+    <state width="1470" height="248" key="GridCell.Tab.0.bottom/0.38.1512.870/1512.25.1920.1055@0.38.1512.870" timestamp="1655653209920" />
     <state width="1470" height="255" key="GridCell.Tab.0.bottom/0.38.1512.872/1512.25.1920.1055@0.38.1512.872" timestamp="1655308202172" />
     <state width="1878" height="255" key="GridCell.Tab.0.bottom/0.38.1512.872/1512.25.1920.1055@1512.25.1920.1055" timestamp="1655396490844" />
     <state width="1470" height="357" key="GridCell.Tab.0.bottom/0.38.1512.872@0.38.1512.872" timestamp="1655626655839" />
@@ -1629,12 +1603,12 @@
     <state width="1878" height="309" key="GridCell.Tab.0.bottom/0.38.1512.944/1512.25.1920.975@1512.25.1920.975" timestamp="1653459919806" />
     <state width="1470" height="293" key="GridCell.Tab.0.bottom/0.38.1512.944/1512.25.1920.977@0.38.1512.944" timestamp="1650186145832" />
     <state width="1878" height="417" key="GridCell.Tab.0.bottom/0.38.1512.944/1512.25.1920.982@1512.25.1920.982" timestamp="1653452645318" />
-    <state width="1470" height="357" key="GridCell.Tab.0.center" timestamp="1655626655839">
-      <screen x="0" y="38" width="1512" height="872" />
+    <state width="1470" height="248" key="GridCell.Tab.0.center" timestamp="1655653209919">
+      <screen x="0" y="38" width="1512" height="870" />
     </state>
     <state width="2005" height="316" key="GridCell.Tab.0.center/-2560.0.2048.1112/0.0.2048.1112@0.0.2048.1112" timestamp="1647086955289" />
     <state width="1470" height="248" key="GridCell.Tab.0.center/0.38.1512.868/1512.25.1920.1055@0.38.1512.868" timestamp="1655567777081" />
-    <state width="1470" height="248" key="GridCell.Tab.0.center/0.38.1512.870/1512.25.1920.1055@0.38.1512.870" timestamp="1655607245230" />
+    <state width="1470" height="248" key="GridCell.Tab.0.center/0.38.1512.870/1512.25.1920.1055@0.38.1512.870" timestamp="1655653209919" />
     <state width="1470" height="255" key="GridCell.Tab.0.center/0.38.1512.872/1512.25.1920.1055@0.38.1512.872" timestamp="1655308202172" />
     <state width="1878" height="255" key="GridCell.Tab.0.center/0.38.1512.872/1512.25.1920.1055@1512.25.1920.1055" timestamp="1655396490843" />
     <state width="1470" height="357" key="GridCell.Tab.0.center/0.38.1512.872@0.38.1512.872" timestamp="1655626655839" />
@@ -1672,12 +1646,12 @@
     <state width="1878" height="309" key="GridCell.Tab.0.center/0.38.1512.944/1512.25.1920.975@1512.25.1920.975" timestamp="1653459919805" />
     <state width="1470" height="293" key="GridCell.Tab.0.center/0.38.1512.944/1512.25.1920.977@0.38.1512.944" timestamp="1650186145831" />
     <state width="1878" height="417" key="GridCell.Tab.0.center/0.38.1512.944/1512.25.1920.982@1512.25.1920.982" timestamp="1653452645318" />
-    <state width="1470" height="357" key="GridCell.Tab.0.left" timestamp="1655626655838">
-      <screen x="0" y="38" width="1512" height="872" />
+    <state width="1470" height="248" key="GridCell.Tab.0.left" timestamp="1655653209919">
+      <screen x="0" y="38" width="1512" height="870" />
     </state>
     <state width="2005" height="316" key="GridCell.Tab.0.left/-2560.0.2048.1112/0.0.2048.1112@0.0.2048.1112" timestamp="1647086955288" />
     <state width="1470" height="248" key="GridCell.Tab.0.left/0.38.1512.868/1512.25.1920.1055@0.38.1512.868" timestamp="1655567777080" />
-    <state width="1470" height="248" key="GridCell.Tab.0.left/0.38.1512.870/1512.25.1920.1055@0.38.1512.870" timestamp="1655607245230" />
+    <state width="1470" height="248" key="GridCell.Tab.0.left/0.38.1512.870/1512.25.1920.1055@0.38.1512.870" timestamp="1655653209919" />
     <state width="1470" height="255" key="GridCell.Tab.0.left/0.38.1512.872/1512.25.1920.1055@0.38.1512.872" timestamp="1655308202171" />
     <state width="1878" height="255" key="GridCell.Tab.0.left/0.38.1512.872/1512.25.1920.1055@1512.25.1920.1055" timestamp="1655396490842" />
     <state width="1470" height="357" key="GridCell.Tab.0.left/0.38.1512.872@0.38.1512.872" timestamp="1655626655838" />
@@ -1715,12 +1689,12 @@
     <state width="1878" height="309" key="GridCell.Tab.0.left/0.38.1512.944/1512.25.1920.975@1512.25.1920.975" timestamp="1653459919805" />
     <state width="1470" height="293" key="GridCell.Tab.0.left/0.38.1512.944/1512.25.1920.977@0.38.1512.944" timestamp="1650186145829" />
     <state width="1878" height="417" key="GridCell.Tab.0.left/0.38.1512.944/1512.25.1920.982@1512.25.1920.982" timestamp="1653452645317" />
-    <state width="1470" height="357" key="GridCell.Tab.0.right" timestamp="1655626655839">
-      <screen x="0" y="38" width="1512" height="872" />
+    <state width="1470" height="248" key="GridCell.Tab.0.right" timestamp="1655653209920">
+      <screen x="0" y="38" width="1512" height="870" />
     </state>
     <state width="2005" height="316" key="GridCell.Tab.0.right/-2560.0.2048.1112/0.0.2048.1112@0.0.2048.1112" timestamp="1647086955289" />
     <state width="1470" height="248" key="GridCell.Tab.0.right/0.38.1512.868/1512.25.1920.1055@0.38.1512.868" timestamp="1655567777082" />
-    <state width="1470" height="248" key="GridCell.Tab.0.right/0.38.1512.870/1512.25.1920.1055@0.38.1512.870" timestamp="1655607245231" />
+    <state width="1470" height="248" key="GridCell.Tab.0.right/0.38.1512.870/1512.25.1920.1055@0.38.1512.870" timestamp="1655653209920" />
     <state width="1470" height="255" key="GridCell.Tab.0.right/0.38.1512.872/1512.25.1920.1055@0.38.1512.872" timestamp="1655308202172" />
     <state width="1878" height="255" key="GridCell.Tab.0.right/0.38.1512.872/1512.25.1920.1055@1512.25.1920.1055" timestamp="1655396490843" />
     <state width="1470" height="357" key="GridCell.Tab.0.right/0.38.1512.872@0.38.1512.872" timestamp="1655626655839" />
