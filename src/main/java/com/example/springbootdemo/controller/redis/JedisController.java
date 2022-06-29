@@ -32,9 +32,10 @@ public class JedisController {
     private JedisServiceImpl jedisService;
 
     @PostMapping("/getRedisByKey")
-    public void getRedisByKey() {
+    public String getRedisByKey() {
         String val = jedisService.getString("name");
         System.out.println(val);
+        return val;
     }
 
     @PostMapping("/selectBy")

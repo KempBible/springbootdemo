@@ -6,6 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
+//https://blog.csdn.net/wenkezhuangyuan/article/details/119430545
 @SpringBootTest
 public class JedisApplicationTests {
 
